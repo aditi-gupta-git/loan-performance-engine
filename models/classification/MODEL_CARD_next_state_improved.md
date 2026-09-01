@@ -5,7 +5,7 @@ Predict next_state for loan performance monitoring
 
 ## Training Data
 - **Source**: Synthetic loan panel data
-- **Size**: ~40,000 training rows, 146 features
+- **Size**: see training logs samples, 147 features
 - **Time Range**: 2020-01 to 2023-12
 - **Split Method**: Time-aware split by reporting_month
   - Train: months ≤ 24
@@ -13,26 +13,26 @@ Predict next_state for loan performance monitoring
   - Test: months ≥ 31
 
 ## Features Used
-- interest_rate: 2298.0000
-- month_of_year: 1544.0000
-- days_past_due: 1373.0000
-- current_balance: 1299.0000
-- balance_ratio_rollmax_12: 1241.0000
-- original_balance: 1092.0000
-- servicer_current_balance: 973.0000
-- balance_ratio_rollmax_6: 966.0000
-- dti_band_encoded: 964.0000
-- current_balance_rollstd_12: 950.0000
-- balance_ratio: 925.0000
-- balance_ratio_lag6: 893.0000
-- current_balance_rollstd_3: 890.0000
-- balance_3m_change: 869.0000
-- current_status_encoded: 864.0000
-- balance_paid_pct: 858.0000
-- balance_ratio_lag3: 836.0000
-- current_balance_rollstd_6: 801.0000
-- balance_ratio_rollstd_3: 776.0000
-- balance_3m_pct_change: 757.0000
+- interest_rate: 2303.0000
+- month_of_year: 1472.0000
+- days_past_due: 1410.0000
+- balance_ratio_rollmax_12: 1248.0000
+- current_balance: 1112.0000
+- current_balance_rollstd_12: 1039.0000
+- original_balance: 1010.0000
+- balance_ratio_lag6: 968.0000
+- servicer_current_balance: 962.0000
+- balance_ratio_rollstd_3: 903.0000
+- balance_3m_change: 903.0000
+- dti_band_encoded: 889.0000
+- balance_ratio: 851.0000
+- balance_paid_pct: 846.0000
+- current_status_encoded: 839.0000
+- balance_ratio_lag3: 837.0000
+- balance_ratio_rollmax_6: 831.0000
+- current_balance_rollstd_3: 827.0000
+- balance_3m_pct_change: 809.0000
+- current_balance_rollstd_6: 787.0000
 
 ## Model Type & Hyperparameters
 - **Algorithm**: lightgbm
@@ -59,11 +59,12 @@ Predict next_state for loan performance monitoring
 Time-aware split ensuring no loan_id appears in both train and validation sets inappropriately. Future months strictly held out for validation/testing.
 
 ## Metrics
-| Dataset | ROC-AUC | PR-AUC | F1 | Recall@P80 | Brier | Macro-F1 |
-|---------|---------|--------|-----|------------|-------|----------|
-| Train   | 0.9904 | 0.9080 | 0.6877 | N/A | 0.1188 | 0.6877 |
-| Val     | 0.8579 | 0.5126 | 0.5252 | N/A | 0.1463 | 0.5252 |
-| Test    | 0.8549 | 0.5173 | 0.5330 | N/A | 0.1515 | 0.5330 |
+| Dataset | ROC-AUC | PR-AUC | F1 | Recall@Precision=0.8 | Brier Score | Macro-F1 |
+|---------|---------|--------|-----|---------------------|-------------|----------|
+| Train   | 0.9905 | 0.9069 | 0.6885 | 0.8480 | 0.1171 | 0.6885 |
+| Val     | 0.8522 | 0.5141 | 0.5207 | 0.3923 | 0.1477 | 0.5207 |
+| Test    | 0.8597 | 0.5273 | 0.5305 | 0.4072 | 0.1456 | 0.5305 |
+
 ## Calibration Approach
 Calibrated using isotonic on training data
 

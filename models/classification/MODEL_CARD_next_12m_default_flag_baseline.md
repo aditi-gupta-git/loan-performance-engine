@@ -5,7 +5,7 @@ Predict next_12m_default_flag for loan performance monitoring
 
 ## Training Data
 - **Source**: Synthetic loan panel data
-- **Size**: ~40,000 training rows, 146 features
+- **Size**: see training logs samples, 147 features
 - **Time Range**: 2020-01 to 2023-12
 - **Split Method**: Time-aware split by reporting_month
   - Train: months ≤ 24
@@ -16,23 +16,23 @@ Predict next_12m_default_flag for loan performance monitoring
 - remaining_term_months: 0.0021
 - days_past_due: 0.0008
 - days_past_due_lag1: 0.0005
+- days_past_due_rollmax_6: 0.0005
 - days_past_due_rollmax_3: 0.0005
-- days_past_due_rollmax_6: 0.0003
+- days_past_due_rollmax_12: 0.0004
 - days_past_due_rollmean_3: 0.0003
-- days_past_due_lag2: 0.0003
+- days_past_due_lag2: 0.0002
 - servicer_days_past_due: 0.0002
 - days_past_due_rollmean_6: 0.0002
-- days_past_due_rollmax_12: 0.0002
-- days_past_due_lag3: 0.0002
-- days_past_due_rollstd_3: 0.0002
-- days_past_due_rollmean_12: 0.0001
-- days_past_due_rollstd_6: 0.0001
+- days_past_due_rollmean_12: 0.0002
+- days_past_due_rollstd_6: 0.0002
+- days_past_due_rollstd_12: 0.0002
+- days_past_due_rollstd_3: 0.0001
 - months_since_dq: 0.0001
-- days_past_due_rollstd_12: 0.0001
+- days_past_due_lag3: 0.0001
 - loan_age_months: 0.0001
+- days_past_due_lag6: 0.0000
 - log_dpd: 0.0000
 - credit_score_band_encoded: 0.0000
-- month_of_year: 0.0000
 
 ## Model Type & Hyperparameters
 - **Algorithm**: logistic_regression
@@ -47,11 +47,12 @@ Predict next_12m_default_flag for loan performance monitoring
 Time-aware split ensuring no loan_id appears in both train and validation sets inappropriately. Future months strictly held out for validation/testing.
 
 ## Metrics
-| Dataset | ROC-AUC | PR-AUC | F1 | Recall@P80 | Brier | Macro-F1 |
-|---------|---------|--------|-----|------------|-------|----------|
-| Train   | 0.6485 | 0.2137 | 0.0022 | N/A | 0.1138 | 0.0022 |
-| Val     | 0.6516 | 0.1919 | 0.0000 | N/A | 0.1028 | 0.0000 |
-| Test    | 0.6494 | 0.1794 | 0.0000 | N/A | 0.0990 | 0.0000 |
+| Dataset | ROC-AUC | PR-AUC | F1 | Recall@Precision=0.8 | Brier Score | Macro-F1 |
+|---------|---------|--------|-----|---------------------|-------------|----------|
+| Train   | 0.6513 | 0.2107 | 0.0004 | 0.0002 | 0.1136 | 0.0004 |
+| Val     | 0.6532 | 0.1870 | 0.0000 | 0.0000 | 0.1013 | 0.0000 |
+| Test    | 0.6585 | 0.1609 | 0.0000 | 0.0000 | 0.0875 | 0.0000 |
+
 ## Calibration Approach
 Calibrated using isotonic on training data
 

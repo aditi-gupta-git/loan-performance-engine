@@ -24,7 +24,7 @@ def run(args):
     from src.utils.config import get_settings
     from src.utils.reproducibility import set_global_seed
 
-    config = get_settings('config/settings.yaml')
+    config = get_settings()
     set_global_seed(42)
     T0 = time.time()
 
@@ -49,7 +49,7 @@ def run(args):
 
     for col in ['reporting_month', 'origination_month']:
         for df in [train_df, test_df]:
-            if col in df.columns:
+            if col in df.columns and not hasattr(df[col].dtype, 'freq'):
                 df[col] = pd.to_datetime(df[col]).dt.to_period('M')
 
     # ── 2. Validation ────────────────────────────────────────────────────────

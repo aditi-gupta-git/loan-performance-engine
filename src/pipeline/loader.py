@@ -257,7 +257,9 @@ def reconcile_servicer_updates(
     )
     # Restore Period type for reporting_month if it was Period before
     if "reporting_month" in primary_df.columns and hasattr(primary_df["reporting_month"].dtype, "freq"):
-        merged["reporting_month"] = pd.to_datetime(merged["reporting_month"]).dt.to_period("M")
+        col = merged["reporting_month"]
+        if not hasattr(col.dtype, "freq"):
+            merged["reporting_month"] = pd.to_datetime(col.astype(str)).dt.to_period("M")
     
     # Identify conflicts
     conflict_cols = [

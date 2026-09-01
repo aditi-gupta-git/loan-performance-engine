@@ -5,7 +5,7 @@ Predict next_6m_delinquency_flag for loan performance monitoring
 
 ## Training Data
 - **Source**: Synthetic loan panel data
-- **Size**: ~40,000 training rows, 146 features
+- **Size**: see training logs samples, 147 features
 - **Time Range**: 2020-01 to 2023-12
 - **Split Method**: Time-aware split by reporting_month
   - Train: months ≤ 24
@@ -13,26 +13,26 @@ Predict next_6m_delinquency_flag for loan performance monitoring
   - Test: months ≥ 31
 
 ## Features Used
-- interest_rate: 581.0000
-- original_balance: 374.0000
-- current_balance: 253.0000
-- balance_ratio_rollmax_12: 229.0000
-- dti_band_encoded: 204.0000
-- balance_3m_change: 193.0000
-- current_balance_lag6: 158.0000
-- balance_3m_pct_change: 157.0000
-- current_balance_rollstd_3: 154.0000
-- current_balance_rollmax_12: 150.0000
-- current_balance_lag3: 139.0000
-- balance_ratio_rollmax_6: 135.0000
-- current_balance_rollmean_12: 125.0000
-- balance_ratio_rollstd_3: 115.0000
-- current_balance_rollstd_6: 112.0000
-- current_status_encoded: 93.0000
-- current_balance_lag2: 90.0000
-- current_balance_rollstd_12: 83.0000
-- month_of_year: 75.0000
-- remaining_term_months: 72.0000
+- interest_rate: 641.0000
+- original_balance: 333.0000
+- balance_ratio_rollmax_12: 269.0000
+- current_balance: 243.0000
+- dti_band_encoded: 229.0000
+- balance_3m_change: 191.0000
+- current_balance_rollstd_3: 180.0000
+- balance_3m_pct_change: 142.0000
+- current_balance_lag6: 134.0000
+- balance_ratio_rollstd_3: 130.0000
+- current_balance_rollmean_12: 123.0000
+- data_quality_flag: 117.0000
+- current_balance_lag3: 114.0000
+- balance_ratio_rollmax_6: 111.0000
+- current_balance_lag2: 107.0000
+- balance_ratio_rollstd_6: 106.0000
+- current_balance_rollmax_12: 103.0000
+- current_balance_lag1: 94.0000
+- current_balance_rollstd_6: 92.0000
+- current_status_encoded: 85.0000
 
 ## Model Type & Hyperparameters
 - **Algorithm**: lightgbm
@@ -58,11 +58,12 @@ Predict next_6m_delinquency_flag for loan performance monitoring
 Time-aware split ensuring no loan_id appears in both train and validation sets inappropriately. Future months strictly held out for validation/testing.
 
 ## Metrics
-| Dataset | ROC-AUC | PR-AUC | F1 | Recall@P80 | Brier | Macro-F1 |
-|---------|---------|--------|-----|------------|-------|----------|
-| Train   | 0.9144 | 0.7292 | 0.5229 | N/A | 0.1021 | 0.5229 |
-| Val     | 0.7456 | 0.4889 | 0.4159 | N/A | 0.1285 | 0.4159 |
-| Test    | 0.6851 | 0.4420 | 0.4126 | N/A | 0.1348 | 0.4126 |
+| Dataset | ROC-AUC | PR-AUC | F1 | Recall@Precision=0.8 | Brier Score | Macro-F1 |
+|---------|---------|--------|-----|---------------------|-------------|----------|
+| Train   | 0.9103 | 0.7150 | 0.5050 | 0.2397 | 0.1027 | 0.5050 |
+| Val     | 0.7326 | 0.4728 | 0.4060 | 0.0233 | 0.1305 | 0.4060 |
+| Test    | 0.6990 | 0.4440 | 0.4243 | 0.0995 | 0.1289 | 0.4243 |
+
 ## Calibration Approach
 Calibrated using isotonic on training data
 
