@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Data (large files)
+data/raw/
+data/synthetic/
+data/processed/
+*.parquet
+*.feather
+
+# Models
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.bin
+models/**/*.h5
+
+# Reports (generated)
+reports/**/*.html
+reports/**/*.json
+reports/**/*.csv
+reports/**/*.png
+
+# Logs
+logs/*.log
+logs/*.jsonl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary
+*.tmp
+*.temp
+tmp/
+temp/

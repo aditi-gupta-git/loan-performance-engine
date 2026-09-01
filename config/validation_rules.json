@@ -1,0 +1,116 @@
+{
+  "rules": [
+    {
+      "rule_id": "R001",
+      "name": "balance_consistency",
+      "description": "Current balance should not exceed original balance (except for fees/capitalized interest)",
+      "severity": "error",
+      "check": "current_balance <= original_balance * 1.05",
+      "columns": ["original_balance", "current_balance"]
+    },
+    {
+      "rule_id": "R002",
+      "name": "date_validity_origination_before_reporting",
+      "description": "Origination month must be before or equal to reporting month",
+      "severity": "error",
+      "check": "origination_month <= reporting_month",
+      "columns": ["origination_month", "reporting_month"]
+    },
+    {
+      "rule_id": "R003",
+      "name": "loan_age_non_negative",
+      "description": "Loan age in months must be non-negative",
+      "severity": "error",
+      "check": "loan_age_months >= 0",
+      "columns": ["loan_age_months"]
+    },
+    {
+      "rule_id": "R004",
+      "name": "remaining_term_non_negative",
+      "description": "Remaining term must be non-negative",
+      "severity": "error",
+      "check": "remaining_term_months >= 0",
+      "columns": ["remaining_term_months"]
+    },
+    {
+      "rule_id": "R005",
+      "name": "delinquency_status_consistency",
+      "description": "Days past due must be consistent with current_status",
+      "severity": "warning",
+      "check": "(current_status == 'Current' and days_past_due == 0) or (current_status in ['30-59 DPD', '60-89 DPD', '90+ DPD'] and days_past_due > 0)",
+      "columns": ["current_status", "days_past_due"]
+    },
+    {
+      "rule_id": "R006",
+      "name": "closed_prepaid_logic",
+      "description": "If loan is closed/prepaid, current_balance should be 0 or near 0",
+      "severity": "warning",
+      "check": "(current_status in ['Prepaid', 'Closed', 'Defaulted'] and current_balance <= original_balance * 0.05) or (current_status not in ['Prepaid', 'Closed', 'Defaulted'])",
+      "columns": ["current_status", "current_balance", "original_balance"]
+    },
+    {
+      "rule_id": "R007",
+      "name": "document_status_gaps",
+      "description": "Document status should not be missing for active loans",
+      "severity": "warning",
+      "check": "(current_status == 'Active' and document_status != 'Missing') or (current_status != 'Active')",
+      "columns": ["current_status", "document_status"]
+    },
+    {
+      "rule_id": "R008",
+      "name": "interest_rate_bounds",
+      "description": "Interest rate should be within reasonable bounds (0-30%)",
+      "severity": "error",
+      "check": "interest_rate >= 0 and interest_rate <= 0.30",
+      "columns": ["interest_rate"]
+    },
+    {
+      "rule_id": "R009",
+      "name": "credit_score_band_valid",
+      "description": "Credit score band must be one of the valid categories",
+      "severity": "error",
+      "check": "credit_score_band in ['<620', '620-659', '660-699', '700-739', '740-779', '780+']",
+      "columns": ["credit_score_band"]
+    },
+    {
+      "rule_id": "R010",
+      "name": "ltv_band_valid",
+      "description": "LTV band must be one of the valid categories",
+      "severity": "error",
+      "check": "ltv_band in ['<60%', '60-70%', '70-80%', '80-90%', '90-100%', '>100%']",
+      "columns": ["ltv_band"]
+    },
+    {
+      "rule_id": "R011",
+      "name": "dti_band_valid",
+      "description": "DTI band must be one of the valid categories",
+      "severity": "error",
+      "check": "dti_band in ['<20%', '20-30%', '30-36%', '36-43%', '43-50%', '>50%']",
+      "columns": ["dti_band"]
+    },
+    {
+      "rule_id": "R012",
+      "name": "document_status_valid",
+      "description": "Document status must be one of the valid categories",
+      "severity": "warning",
+      "check": "document_status in ['Current', 'Missing', 'Stale', 'Reconciliation Required'] or document_status.isna()",
+      "columns": ["document_status"]
+    },
+    {
+      "rule_id": "R013",
+      "name": "prepayment_default_mutual_exclusive",
+      "description": "A loan cannot be both prepaid and defaulted in the same month",
+      "severity": "error",
+      "check": "not (prepayment_flag == 1 and default_flag == 1)",
+      "columns": ["prepayment_flag", "default_flag"]
+    },
+    {
+      "rule_id": "R014",
+      "name": "current_balance_positive",
+      "description": "Current balance must be non-negative and less than or equal to original balance",
+      "severity": "warning",
+      "check": "current_balance >= 0 and current_balance <= original_balance",
+      "columns": ["current_balance", "original_balance"]
+    }
+  ]
+}

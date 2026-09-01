@@ -1,0 +1,98 @@
+# Loan Performance Intelligence Engine - Configuration
+
+# Data paths
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  synthetic_dir: "data/synthetic"
+  models_dir: "models"
+  reports_dir: "reports"
+  logs_dir: "logs"
+
+# Synthetic data generation
+synthetic:
+  n_loans: 50000
+  n_months: 36
+  missing_rate: 0.05
+  outlier_rate: 0.02
+  conflict_rate: 0.03
+  label_noise_rate: 0.01
+  random_seed: 42
+
+# Time-aware split
+split:
+  train_end_month: 24
+  val_start_month: 25
+  val_end_month: 30
+  test_start_month: 31
+
+# Feature engineering
+features:
+  rolling_windows: [3, 6, 12]
+  lag_periods: [1, 2, 3, 6]
+  categorical_encoding: "ordinal"  # ordinal, onehot, target
+  handle_missing: "median"  # median, mean, constant, drop
+
+# Modeling
+modeling:
+  random_seed: 42
+  n_jobs: -1
+  classification:
+    targets:
+      - "next_3m_delinquency_flag"
+      - "next_6m_delinquency_flag"
+      - "next_12m_default_flag"
+      - "next_12m_prepayment_flag"
+      - "next_state"
+    baseline_model: "logistic_regression"
+    improved_model: "lightgbm"
+    calibration_method: "isotonic"  # isotonic, platt
+    class_weight: "balanced"
+    metrics: ["roc_auc", "pr_auc", "f1", "recall_at_precision", "brier_score", "macro_f1"]
+  survival:
+    model_type: "discrete_time"  # discrete_time, cox, competing_risks
+    event_col: "event_type"  # default, prepayment, censored
+    duration_col: "duration_months"
+    baseline_model: "kaplan_meier"
+
+# Anomaly detection
+anomaly:
+  contamination: 0.05
+  methods: ["isolation_forest", "rule_based"]
+  ensemble_weights: [0.6, 0.4]
+  exception_types: ["data_quality", "business_rule", "pattern_anomaly", "servicer_conflict"]
+
+# Scenario simulation
+scenarios:
+  base:
+    rate_shift: 0.0
+    credit_deterioration: 0.0
+    prepayment_multiplier: 1.0
+  adverse_credit:
+    rate_shift: 0.02
+    credit_deterioration: 0.15
+    prepayment_multiplier: 0.8
+  high_prepayment:
+    rate_shift: -0.015
+    credit_deterioration: 0.0
+    prepayment_multiplier: 1.5
+
+# LLM Copilot
+llm:
+  provider: "deepseek"  # primary; set DEEPSEEK_API_KEY env var
+  model: "deepseek-chat"
+  temperature: 0.1
+  max_tokens: 1000
+  grounding_required: true
+  log_all_interactions: true
+  hallucination_guard: true
+
+# Reproducibility
+reproducibility:
+  global_seed: 42
+  deterministic: true
+
+# Output
+output:
+  submission_template: "config/submission_template.csv"
+  model_card_template: "config/model_card_template.md"
