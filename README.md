@@ -42,18 +42,18 @@
 
 ## 1. What This System Does
 
-This submission addresses every required task in the challenge problem statement using a **strictly ML-first approach** — the LLM is used only to generate human-readable reviewer notes, never for classification or prediction.
+This submission addresses every required task in the challenge problem statement using a **strictly ML-first approach** - the LLM is used only to generate human-readable reviewer notes, never for classification or prediction.
 
 | Challenge Task | Approach |
 |---|---|
-| **T1 — Data Profiling** | 14 validation rules, per-record quality flags, PSI drift, missingness, outlier detection |
-| **T2 — Supervised Prediction** | 5 targets, LightGBM vs. LogisticRegression baseline, time-aware split, isotonic calibration |
-| **T3 — Survival / Transition** | Kaplan-Meier, Cox PH (competing risks), discrete-time hazard model |
-| **T4 — Anomaly Detection** | IsolationForest ensemble + rule-based flags, exception type classifier |
-| **T5 — Scenario Simulation** | Base, adverse-credit, high-prepayment projections with segment-level breakdowns |
-| **T6 — Explainability** | SHAP global importance, local per-loan explanations, FP/FN case studies, calibration curves |
-| **T7 — LLM Copilot** | DeepSeek-powered reviewer notes, grounding retriever, hallucination guard, interaction log |
-| **T8 — Agentic Evidence** | `AI_DEVELOPMENT_LOG.md` — prompts, accepted/rejected outputs, human review process |
+| **T1 - Data Profiling** | 14 validation rules, per-record quality flags, PSI drift, missingness, outlier detection |
+| **T2 - Supervised Prediction** | 5 targets, LightGBM vs. LogisticRegression baseline, time-aware split, isotonic calibration |
+| **T3 - Survival / Transition** | Kaplan-Meier, Cox PH (competing risks), discrete-time hazard model |
+| **T4 - Anomaly Detection** | IsolationForest ensemble + rule-based flags, exception type classifier |
+| **T5 - Scenario Simulation** | Base, adverse-credit, high-prepayment projections with segment-level breakdowns |
+| **T6 - Explainability** | SHAP global importance, local per-loan explanations, FP/FN case studies, calibration curves |
+| **T7 - LLM Copilot** | DeepSeek-powered reviewer notes, grounding retriever, hallucination guard, interaction log |
+| **T8 - Agentic Evidence** | `AI_DEVELOPMENT_LOG.md` — prompts, accepted/rejected outputs, human review process |
 
 ---
 
@@ -62,46 +62,46 @@ This submission addresses every required task in the challenge problem statement
 ```
 loan-performance-engine/
 │
-├── run_pipeline.py               ← One command runs all 11 stages end-to-end
-├── demo_visuals.py               ← Generates 8 presentation charts from pipeline outputs
-├── submission.csv                ← Final predictions (1,612 rows × 14 columns)
-├── AI_DEVELOPMENT_LOG.md         ← Agentic coding evidence — Task 8
-├── requirements.txt              ← Minimal, only actually-used packages
-├── .env.example                  ← API key template (copy → .env, never commit)
+├── run_pipeline.py               
+├── demo_visuals.py               
+├── submission.csv                
+├── AI_DEVELOPMENT_LOG.md         
+├── requirements.txt              
+├── .env.example                  
 │
 ├── src/
 │   ├── pipeline/
-│   │   ├── loader.py             ← Load, merge, reconcile servicer updates
-│   │   ├── validation.py         ← Apply 14 deterministic rules → quality flags
-│   │   └── synthetic_generator.py ← Schema-faithful synthetic data (replace with real data)
+│   │   ├── loader.py             
+│   │   ├── validation.py         
+│   │   └── synthetic_generator.py 
 │   │
 │   ├── profiling/
-│   │   └── profile.py            ← Column stats, missingness, PSI drift, quality score
+│   │   └── profile.py           
 │   │
 │   ├── features/
-│   │   └── engineer.py           ← 157 leakage-safe features (lags, rolling windows, encodings)
+│   │   └── engineer.py           
 │   │
 │   ├── modeling/
-│   │   ├── train_supervised.py   ← Baseline + LightGBM for 5 targets; calibration; model cards
-│   │   ├── survival.py           ← Kaplan-Meier, Cox PH, discrete-time hazard
-│   │   ├── anomaly.py            ← IsolationForest + rules; exception classifier
-│   │   ├── scenario.py           ← 3 macro scenarios; segment projections
-│   │   └── explain.py            ← SHAP global/local; FP/FN analysis
+│   │   ├── train_supervised.py   
+│   │   ├── survival.py           
+│   │   ├── anomaly.py            
+│   │   ├── scenario.py           
+│   │   └── explain.py            
 │   │
 │   ├── llm_copilot/
-│   │   └── reviewer.py           ← DeepSeek client; grounding retriever; hallucination guard
+│   │   └── reviewer.py           
 │   │
 │   ├── evaluation/
-│   │   ├── metrics.py            ← ROC-AUC, PR-AUC, F1, Brier score, recall @ precision
-│   │   └── time_split.py         ← Time-aware split with leakage audit
+│   │   ├── metrics.py            
+│   │   └── time_split.py         
 │   │
 │   ├── submission/
-│   │   └── generate_submission.py ← Format predictions into required schema
+│   │   └── generate_submission.py 
 │   │
 │   └── utils/
-│       ├── config.py             ← Settings singleton — get_settings()
+│       ├── config.py             
 │       ├── logging.py
-│       └── reproducibility.py   ← Global seed = 42 everywhere
+│       └── reproducibility.py   
 │
 ├── notebooks/
 │   ├── 01_data_profiling.ipynb
@@ -114,31 +114,31 @@ loan-performance-engine/
 │   └── 08_llm_copilot_demo.ipynb
 │
 ├── config/
-│   ├── settings.yaml             ← All tunable pipeline parameters
-│   ├── validation_rules.json     ← 14 rule definitions (R001–R014)
-│   ├── data_dictionary.md        ← Field definitions used for LLM grounding
-│   ├── macro_scenarios.csv       ← Shock assumptions per scenario
-│   └── submission_template.csv  ← Required 14-column output schema
+│   ├── settings.yaml             
+│   ├── validation_rules.json     
+│   ├── data_dictionary.md       
+│   ├── macro_scenarios.csv       
+│   └── submission_template.csv  
 │
 ├── models/
-│   ├── classification/           ← 10 trained .pkl files + 10 model cards (.md)
-│   ├── survival/                 ← 3 trained survival models
-│   ├── anomaly/                  ← IsolationForest + exception classifier
-│   └── feature_engineering/      ← Encoders, scalers, feature manifest CSV
+│   ├── classification/           
+│   ├── survival/                 
+│   ├── anomaly/                  
+│   └── feature_engineering/      
 │
 ├── reports/
-│   ├── profiling/                ← train_profile.html  ←  open in browser
-│   ├── modeling/                 ← detailed_results.json, model_comparison.csv
-│   ├── explainability/           ← global_importance.json + 5 SHAP summary plots
-│   ├── scenario/                 ← scenario_results.json, scenario_comparison.csv
-│   ├── survival/                 ← survival_results.json
-│   └── copilot/                  ← demo_outputs.json, rejected_examples.json
+│   ├── profiling/                
+│   ├── modeling/                 
+│   ├── explainability/           
+│   ├── scenario/                 
+│   ├── survival/                 
+│   └── copilot/                  
 │
-├── data/synthetic/               ← 4 CSV files (swap with organiser data when released)
+├── data/synthetic/               
 ├── tests/
-│   └── test_pipeline.py          ← 26 unit and integration tests
+│   └── test_pipeline.py          
 └── logs/
-    └── llm_interaction_log.jsonl ← Every LLM interaction logged
+    └── llm_interaction_log.jsonl 
 ```
 
 ---
@@ -499,21 +499,6 @@ See [`AI_DEVELOPMENT_LOG.md`](AI_DEVELOPMENT_LOG.md) for the full agentic coding
 
 Full field definitions are in [`config/data_dictionary.md`](config/data_dictionary.md).
 
-### Replacing with real organiser data
-
-```bash
-# Drop the organiser's four files into data/synthetic/ using exactly these names:
-data/synthetic/loan_monthly_performance_train.csv
-data/synthetic/loan_monthly_performance_test.csv
-data/synthetic/loan_static_attributes.csv
-data/synthetic/servicer_updates.csv
-
-# Re-run — no code changes needed:
-python run_pipeline.py
-```
-
----
-
 ## 14. Submission File
 
 `submission.csv` — **1,612 rows × 14 columns**
@@ -537,36 +522,8 @@ python run_pipeline.py
 
 ---
 
-## 15. Running on GitHub Codespaces
 
-This project is designed to run fully in a Codespace. No local installation required.
-
-**Step 1 — Open a Codespace**
-
-On this repository page: **Code → Codespaces → Create codespace on main**
-
-**Step 2 — Add your DeepSeek API key as a secret** *(optional)*
-
-GitHub → Profile → Settings → Codespaces → New secret:
-- Name: `DEEPSEEK_API_KEY`
-- Value: your key
-- Repository: select this repo
-
-Restart the Codespace after saving.
-
-**Step 3 — Install and run**
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python -m pytest tests/ -q               # 26 passed
-python run_pipeline.py --use-synthetic   # full pipeline
-python demo_visuals.py                   # 8 charts → demo_charts/
-```
-
----
-
-## 16. Reproducing Results
+## 15. Reproducing Results
 
 Everything is deterministic. Random seed is fixed to `42` in `src/utils/reproducibility.py`.
 
@@ -596,7 +553,7 @@ Pre-trained `.pkl` files and pre-generated reports are committed to the reposito
 | LLM interaction log | `logs/llm_interaction_log.jsonl` | ✅ |
 | Notebooks (×8) | `notebooks/` | ✅ |
 | AI Development Log | `AI_DEVELOPMENT_LOG.md` | ✅ |
-| Demo video | *(to be added before submission)* | ⏳ |
+| Demo video | drive link | ✅ |
 
 ---
 
