@@ -1,0 +1,246 @@
+{
+  "overall": {
+    "model_name": "kaplan_meier_overall",
+    "model_type": "kaplan_meier",
+    "event_type": "any",
+    "metrics": {
+      "concordance_index": 0.9650988132282786,
+      "brier_score": 0.2932493662699363,
+      "log_likelihood": 0.0,
+      "aic": 2.0
+    },
+    "survival_curves": {
+      "660-699": {
+        "median_survival": 27.0,
+        "n_loans": 750
+      },
+      "740-779": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "<620": {
+        "median_survival": 23.0,
+        "n_loans": 1251
+      },
+      "700-739": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "620-659": {
+        "median_survival": 26.0,
+        "n_loans": 1000
+      },
+      "780+": {
+        "median_survival": 26.0,
+        "n_loans": 499
+      }
+    },
+    "feature_importance": {},
+    "training_time_seconds": 0.06468796730041504,
+    "model_path": "models/survival/kaplan_meier_overall.pkl"
+  },
+  "default": {
+    "model_name": "cox_default",
+    "model_type": "cox_ph",
+    "event_type": "default",
+    "metrics": {
+      "concordance_index": 0.9616229002273021,
+      "brier_score": 0.25,
+      "log_likelihood": -8531.82163562582,
+      "aic": 17149.64327125164
+    },
+    "survival_curves": {
+      "660-699": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "740-779": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "<620": {
+        "median_survival": 28.0,
+        "n_loans": 1251
+      },
+      "700-739": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "620-659": {
+        "median_survival": 28.0,
+        "n_loans": 1000
+      },
+      "780+": {
+        "median_survival": 28.0,
+        "n_loans": 499
+      }
+    },
+    "feature_importance": {
+      "original_balance": 3.6956796522762615e-07,
+      "interest_rate": 2.312740257160461,
+      "balance_ratio_at_event": 1.1127322385372538,
+      "dpd_at_event": 0.004399467401304941,
+      "ever_modified": 0.48829191145672357,
+      "credit_score_band_encoded": 0.11705551916569702,
+      "ltv_band_encoded": 0.08458951852967982,
+      "dti_band_encoded": 0.07640791331150427,
+      "state_AZ": 0.06405502614449891,
+      "state_CA": 0.016910723906795395,
+      "state_FL": 0.059954891239254675,
+      "state_GA": 0.12308834154318425,
+      "state_IL": 0.14841495120777423,
+      "state_IN": 0.032995467037382174,
+      "state_MA": 0.0016172813196761355,
+      "state_MD": 0.08752347736960202,
+      "state_MI": 0.05417447956478995,
+      "state_MO": 0.014540544125787636,
+      "state_NC": 0.09419560788385774,
+      "state_NJ": 0.19001462206072522,
+      "state_NY": 0.12838106534951682,
+      "state_OH": 0.01803739214374978,
+      "state_PA": 0.0577316622311767,
+      "state_TN": 0.01257964048422736,
+      "state_TX": 0.008619423981543669,
+      "state_VA": 0.012881338022428667,
+      "state_WA": 0.08971423624396242,
+      "state_WI": 0.03611869618328539,
+      "loan_purpose_Cash-out Refinance": 0.0005146331182794679,
+      "loan_purpose_Purchase": 0.024267067167776917,
+      "loan_purpose_Refinance": 0.029138724883308483,
+      "occupancy_type_Investment": 0.13073728637804524,
+      "occupancy_type_Primary": 0.1487263919772129,
+      "occupancy_type_Second Home": 0.13605337962833172,
+      "property_type_2-4 Unit": 0.043728834417535355,
+      "property_type_Condo": 0.018309441043178082,
+      "property_type_Manufactured": 0.09479244117643355,
+      "property_type_SFR": 0.007498731938333726,
+      "servicer_name_Servicer_A": 0.03262750532153914,
+      "servicer_name_Servicer_B": 0.046425446280939815,
+      "servicer_name_Servicer_C": 0.04721131196553881,
+      "servicer_name_Servicer_D": 0.021483674723225807,
+      "servicer_name_Servicer_E": 0.03363453500068584
+    },
+    "training_time_seconds": 0.22409844398498535,
+    "model_path": "models/survival/cox_default.pkl"
+  },
+  "prepayment": {
+    "model_name": "cox_prepayment",
+    "model_type": "cox_ph",
+    "event_type": "prepayment",
+    "metrics": {
+      "concordance_index": 0.9361370085670855,
+      "brier_score": 0.25,
+      "log_likelihood": -10847.720561424825,
+      "aic": 21781.44112284965
+    },
+    "survival_curves": {
+      "660-699": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "740-779": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "<620": {
+        "median_survival": 28.0,
+        "n_loans": 1251
+      },
+      "700-739": {
+        "median_survival": 28.0,
+        "n_loans": 750
+      },
+      "620-659": {
+        "median_survival": 28.0,
+        "n_loans": 1000
+      },
+      "780+": {
+        "median_survival": 28.0,
+        "n_loans": 499
+      }
+    },
+    "feature_importance": {
+      "original_balance": 1.69890159450806e-07,
+      "interest_rate": 1.2900484313738343,
+      "balance_ratio_at_event": 1.6918635522278882,
+      "dpd_at_event": 0.00403150057447073,
+      "ever_modified": 0.6905720915054231,
+      "credit_score_band_encoded": 0.06258362165160543,
+      "ltv_band_encoded": 0.04600696084082641,
+      "dti_band_encoded": 0.05833167350203672,
+      "state_AZ": 0.10624174614311892,
+      "state_CA": 0.04538446338285595,
+      "state_FL": 0.061930789257768494,
+      "state_GA": 0.10206455963188146,
+      "state_IL": 0.06615287366721674,
+      "state_IN": 0.01587471724223287,
+      "state_MA": 0.10592470773473289,
+      "state_MD": 0.041490428037154706,
+      "state_MI": 0.11179187858622172,
+      "state_MO": 0.10438913727263502,
+      "state_NC": 0.12893037123986437,
+      "state_NJ": 0.016341843412647793,
+      "state_NY": 0.13307627423680488,
+      "state_OH": 0.04503648586229091,
+      "state_PA": 0.05738916368857194,
+      "state_TN": 0.10696857691679727,
+      "state_TX": 0.012465569570106695,
+      "state_VA": 0.06708137695145391,
+      "state_WA": 0.0911666938691502,
+      "state_WI": 0.07789336304101137,
+      "loan_purpose_Cash-out Refinance": 0.029226160780202976,
+      "loan_purpose_Purchase": 0.014617777151922839,
+      "loan_purpose_Refinance": 0.005041974478134752,
+      "occupancy_type_Investment": 0.02838920176798476,
+      "occupancy_type_Primary": 0.03311058062725583,
+      "occupancy_type_Second Home": 0.031036509936663192,
+      "property_type_2-4 Unit": 0.007727789246612233,
+      "property_type_Condo": 0.0009129071489041474,
+      "property_type_Manufactured": 0.003088054606016438,
+      "property_type_SFR": 0.003584795447305975,
+      "servicer_name_Servicer_A": 0.0395676934226452,
+      "servicer_name_Servicer_B": 0.0018768489778199539,
+      "servicer_name_Servicer_C": 0.058131855883069246,
+      "servicer_name_Servicer_D": 0.06571428778834755,
+      "servicer_name_Servicer_E": 0.05146009787558646
+    },
+    "training_time_seconds": 0.21097493171691895,
+    "model_path": "models/survival/cox_prepayment.pkl"
+  },
+  "discrete_time": {
+    "model_name": "discrete_time_transition",
+    "model_type": "discrete_time",
+    "event_type": "transition",
+    "metrics": {
+      "concordance_index": 0.9703731441492098,
+      "brier_score": 0.2653167933390974,
+      "log_likelihood": -22283.161522170776,
+      "aic": 44658.32304434155
+    },
+    "survival_curves": {},
+    "feature_importance": {
+      "balance_at_event": 19.23336675469948,
+      "occupancy_type_Investment": 0.6591013838186095,
+      "log_t": 0.5429194473991037,
+      "servicer_name_Servicer_B": 0.49372750413481037,
+      "loan_purpose_Refinance": 0.49225219734148745,
+      "loan_purpose_Cash-out Refinance": 0.43462230946706887,
+      "ever_modified": 0.4265190439460672,
+      "property_type_Condo": 0.3947038564233478,
+      "property_type_2-4 Unit": 0.3936018215268436,
+      "occupancy_type_Second Home": 0.3839352299914984,
+      "loan_purpose_Purchase": 0.3518132477570214,
+      "state_MD": 0.256587306444793,
+      "servicer_name_Servicer_E": 0.2536801013830865,
+      "property_type_SFR": 0.25364311944916024,
+      "state_IL": 0.23840189550871574,
+      "property_type_Manufactured": 0.2367387057015883,
+      "occupancy_type_Primary": 0.2356509381924716,
+      "servicer_name_Servicer_A": 0.18499685945163447,
+      "servicer_name_Servicer_D": 0.1797612860815459,
+      "credit_score_band_encoded": 0.17602951403715442
+    },
+    "training_time_seconds": 30.770228147506714,
+    "model_path": "models/survival/discrete_time.pkl"
+  }
+}

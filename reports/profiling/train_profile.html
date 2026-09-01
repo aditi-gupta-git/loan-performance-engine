@@ -1,0 +1,561 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Data Profiling Report: train</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .metric { display: inline-block; margin: 10px; padding: 15px; background: #f5f5f5; border-radius: 5px; }
+                .warning { color: #d9534f; }
+                .success { color: #5cb85c; }
+            </style>
+        </head>
+        <body>
+            <h1>Data Profiling Report: train</h1>
+            
+            <h2>Dataset Overview</h2>
+            <div class="metric">Rows: 99,516</div>
+            <div class="metric">Columns: 37</div>
+            <div class="metric">Batch Quality Score: 28.5/100</div>
+            
+            <h2>Column Profiles</h2>
+            <table>
+                <tr>
+                    <th>Column</th><th>Type</th><th>Missing %</th><th>Cardinality</th>
+                    <th>Mean</th><th>Std</th><th>Min</th><th>Max</th>
+                    <th>Outlier %</th><th>PSI</th><th>Drift</th>
+                </tr>
+        
+                <tr>
+                    <td>loan_id</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>5000</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.422</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>month_index</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>28</td>
+                    <td>12.57</td>
+                    <td>7.90</td>
+                    <td>1.00</td>
+                    <td>28.00</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>reporting_month</td>
+                    <td>period[M]</td>
+                    <td>0.0%</td>
+                    <td>63</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>3.802</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>origination_month</td>
+                    <td>period[M]</td>
+                    <td>0.0%</td>
+                    <td>36</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.007</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>loan_age_months</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>28</td>
+                    <td>12.57</td>
+                    <td>7.90</td>
+                    <td>1.00</td>
+                    <td>28.00</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>remaining_term_months</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>84</td>
+                    <td>309.43</td>
+                    <td>69.27</td>
+                    <td>153.00</td>
+                    <td>360.00</td>
+                    <td>0.0%</td>
+                    <td>6.398</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>original_balance</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>4971</td>
+                    <td>326742.22</td>
+                    <td>174349.27</td>
+                    <td>50786.00</td>
+                    <td>1500000.00</td>
+                    <td>4.1%</td>
+                    <td>0.008</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>current_balance</td>
+                    <td>float64</td>
+                    <td>1.3%</td>
+                    <td>95410</td>
+                    <td>334827.80</td>
+                    <td>407177.45</td>
+                    <td>0.00</td>
+                    <td>17128299.33</td>
+                    <td>4.5%</td>
+                    <td>0.009</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>interest_rate</td>
+                    <td>float64</td>
+                    <td>1.2%</td>
+                    <td>1263</td>
+                    <td>0.06</td>
+                    <td>0.02</td>
+                    <td>0.02</td>
+                    <td>0.30</td>
+                    <td>1.1%</td>
+                    <td>0.004</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>credit_score_band</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>6</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.003</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>ltv_band</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>6</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.009</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>dti_band</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>6</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.002</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>state</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>20</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.003</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>loan_purpose</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>3</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.001</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>occupancy_type</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>3</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.002</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>property_type</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>4</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.001</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>servicer_name</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>5</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>current_status</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>7</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.003</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>days_past_due</td>
+                    <td>float64</td>
+                    <td>1.3%</td>
+                    <td>754</td>
+                    <td>13.65</td>
+                    <td>67.07</td>
+                    <td>0.00</td>
+                    <td>999.00</td>
+                    <td>10.4%</td>
+                    <td>0.000</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>modification_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.01</td>
+                    <td>0.08</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>0.7%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>prepayment_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.01</td>
+                    <td>0.12</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.5%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>default_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.01</td>
+                    <td>0.11</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.2%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>loss_severity_band</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>4</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>last_updated_at</td>
+                    <td>datetime64[ns]</td>
+                    <td>0.0%</td>
+                    <td>1762</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>1.802</td>
+                    <td class="warning">Yes</td>
+                </tr>
+            
+                <tr>
+                    <td>source_system</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>document_status</td>
+                    <td>object</td>
+                    <td>1.3%</td>
+                    <td>3</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>next_3m_delinquency_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.14</td>
+                    <td>0.35</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>14.4%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>next_6m_delinquency_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.20</td>
+                    <td>0.40</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>20.4%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>next_12m_default_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.13</td>
+                    <td>0.33</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>12.7%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>next_12m_prepayment_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.15</td>
+                    <td>0.35</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>14.8%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>next_state</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>7</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>exception_required</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>0.19</td>
+                    <td>0.39</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>19.3%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>exception_type</td>
+                    <td>object</td>
+                    <td>0.0%</td>
+                    <td>5</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>servicer_current_balance</td>
+                    <td>float64</td>
+                    <td>70.0%</td>
+                    <td>29026</td>
+                    <td>310700.08</td>
+                    <td>178257.40</td>
+                    <td>0.00</td>
+                    <td>2446689.26</td>
+                    <td>4.1%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>servicer_current_status</td>
+                    <td>object</td>
+                    <td>70.0%</td>
+                    <td>7</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>0.0%</td>
+                    <td>0.000</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>servicer_days_past_due</td>
+                    <td>float64</td>
+                    <td>70.0%</td>
+                    <td>304</td>
+                    <td>9.45</td>
+                    <td>35.16</td>
+                    <td>0.00</td>
+                    <td>364.00</td>
+                    <td>10.3%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+                <tr>
+                    <td>data_quality_flag</td>
+                    <td>int64</td>
+                    <td>0.0%</td>
+                    <td>2</td>
+                    <td>1.53</td>
+                    <td>0.50</td>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                    <td>0.0%</td>
+                    <td>N/A</td>
+                    <td class="success">No</td>
+                </tr>
+            
+            </table>
+            
+            <h2>Drift Summary</h2>
+        
+            <div class="metric">Drift Columns: 10</div>
+            <div class="metric">Max PSI: 6.398</div>
+            <div class="metric">Avg PSI: 0.462</div>
+            <p>High PSI Columns: loan_id, reporting_month, remaining_term_months, last_updated_at</p>
+            <p>High KS Columns: month_index, loan_age_months, remaining_term_months, original_balance, current_balance, interest_rate, days_past_due</p>
+            
+        </body>
+        </html>
+        

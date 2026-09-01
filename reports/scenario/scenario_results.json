@@ -1,0 +1,1676 @@
+{
+  "base": {
+    "scenario_name": "base",
+    "aggregate_projections": {
+      "next_3m_delinquency_flag_rate": 0.14379177900259454,
+      "next_3m_delinquency_flag_count": 6951,
+      "next_6m_delinquency_flag_rate": 0.2006402231020678,
+      "next_6m_delinquency_flag_count": 9596,
+      "next_12m_default_flag_rate": 0.124231869269335,
+      "next_12m_default_flag_count": 7905,
+      "next_12m_prepayment_flag_rate": 0.14941167161302646,
+      "next_12m_prepayment_flag_count": 6899,
+      "avg_next_3m_delinquency_flag_prob": 0.14379177900259454,
+      "avg_next_6m_delinquency_flag_prob": 0.2006402231020678,
+      "avg_next_12m_default_flag_prob": 0.124231869269335,
+      "avg_next_12m_prepayment_flag_prob": 0.14941167161302646
+    },
+    "segment_projections": {
+      "credit_score_band": {
+        "620-659": {
+          "next_3m_delinquency_flag_rate": 0.16774528336711964,
+          "next_3m_delinquency_flag_count": 1736,
+          "next_6m_delinquency_flag_rate": 0.23252530006606353,
+          "next_6m_delinquency_flag_count": 2307,
+          "next_12m_default_flag_rate": 0.15127894853343776,
+          "next_12m_default_flag_count": 2005,
+          "next_12m_prepayment_flag_rate": 0.10293826113114521,
+          "next_12m_prepayment_flag_count": 389
+        },
+        "660-699": {
+          "next_3m_delinquency_flag_rate": 0.13593983930480552,
+          "next_3m_delinquency_flag_count": 999,
+          "next_6m_delinquency_flag_rate": 0.1892501153620311,
+          "next_6m_delinquency_flag_count": 1291,
+          "next_12m_default_flag_rate": 0.10194568336525943,
+          "next_12m_default_flag_count": 925,
+          "next_12m_prepayment_flag_rate": 0.16097832791268843,
+          "next_12m_prepayment_flag_count": 963
+        },
+        "700-739": {
+          "next_3m_delinquency_flag_rate": 0.11924488252187873,
+          "next_3m_delinquency_flag_count": 866,
+          "next_6m_delinquency_flag_rate": 0.16707147602344677,
+          "next_6m_delinquency_flag_count": 1102,
+          "next_12m_default_flag_rate": 0.08104699960562162,
+          "next_12m_default_flag_count": 632,
+          "next_12m_prepayment_flag_rate": 0.20106968063232242,
+          "next_12m_prepayment_flag_count": 1613
+        },
+        "740-779": {
+          "next_3m_delinquency_flag_rate": 0.10612160804016248,
+          "next_3m_delinquency_flag_count": 759,
+          "next_6m_delinquency_flag_rate": 0.1454988166570716,
+          "next_6m_delinquency_flag_count": 903,
+          "next_12m_default_flag_rate": 0.06592560074716794,
+          "next_12m_default_flag_count": 531,
+          "next_12m_prepayment_flag_rate": 0.1887168094200475,
+          "next_12m_prepayment_flag_count": 1698
+        },
+        "780+": {
+          "next_3m_delinquency_flag_rate": 0.10679930115467506,
+          "next_3m_delinquency_flag_count": 478,
+          "next_6m_delinquency_flag_rate": 0.13106012478390616,
+          "next_6m_delinquency_flag_count": 623,
+          "next_12m_default_flag_rate": 0.057343751284061426,
+          "next_12m_default_flag_count": 364,
+          "next_12m_prepayment_flag_rate": 0.23352614663480586,
+          "next_12m_prepayment_flag_count": 1767
+        },
+        "<620": {
+          "next_3m_delinquency_flag_rate": 0.18416844309911393,
+          "next_3m_delinquency_flag_count": 2113,
+          "next_6m_delinquency_flag_rate": 0.26722025821419504,
+          "next_6m_delinquency_flag_count": 3370,
+          "next_12m_default_flag_rate": 0.20881382751988825,
+          "next_12m_default_flag_count": 3448,
+          "next_12m_prepayment_flag_rate": 0.08729592297953691,
+          "next_12m_prepayment_flag_count": 469
+        }
+      },
+      "ltv_band": {
+        "60-70%": {
+          "next_3m_delinquency_flag_rate": 0.1283307491496926,
+          "next_3m_delinquency_flag_count": 965,
+          "next_6m_delinquency_flag_rate": 0.16572482082966483,
+          "next_6m_delinquency_flag_count": 1200,
+          "next_12m_default_flag_rate": 0.0777851405694418,
+          "next_12m_default_flag_count": 770,
+          "next_12m_prepayment_flag_rate": 0.19434167560111598,
+          "next_12m_prepayment_flag_count": 1679
+        },
+        "70-80%": {
+          "next_3m_delinquency_flag_rate": 0.1305857592530656,
+          "next_3m_delinquency_flag_count": 1229,
+          "next_6m_delinquency_flag_rate": 0.17070567487425017,
+          "next_6m_delinquency_flag_count": 1555,
+          "next_12m_default_flag_rate": 0.09426302198156901,
+          "next_12m_default_flag_count": 1197,
+          "next_12m_prepayment_flag_rate": 0.16487116768979895,
+          "next_12m_prepayment_flag_count": 1837
+        },
+        "80-90%": {
+          "next_3m_delinquency_flag_rate": 0.15440459252356073,
+          "next_3m_delinquency_flag_count": 1546,
+          "next_6m_delinquency_flag_rate": 0.23076975831818605,
+          "next_6m_delinquency_flag_count": 2123,
+          "next_12m_default_flag_rate": 0.136586992789569,
+          "next_12m_default_flag_count": 1669,
+          "next_12m_prepayment_flag_rate": 0.13855059859555027,
+          "next_12m_prepayment_flag_count": 966
+        },
+        "90-100%": {
+          "next_3m_delinquency_flag_rate": 0.16148723327128392,
+          "next_3m_delinquency_flag_count": 1526,
+          "next_6m_delinquency_flag_rate": 0.23169228825536042,
+          "next_6m_delinquency_flag_count": 2256,
+          "next_12m_default_flag_rate": 0.16854254195806503,
+          "next_12m_default_flag_count": 2070,
+          "next_12m_prepayment_flag_rate": 0.11026980983039562,
+          "next_12m_prepayment_flag_count": 551
+        },
+        "<60%": {
+          "next_3m_delinquency_flag_rate": 0.10947937371622721,
+          "next_3m_delinquency_flag_count": 800,
+          "next_6m_delinquency_flag_rate": 0.13693930077084351,
+          "next_6m_delinquency_flag_count": 978,
+          "next_12m_default_flag_rate": 0.0521586114936634,
+          "next_12m_default_flag_count": 498,
+          "next_12m_prepayment_flag_rate": 0.1878751319493406,
+          "next_12m_prepayment_flag_count": 1706
+        },
+        ">100%": {
+          "next_3m_delinquency_flag_rate": 0.1943630690171229,
+          "next_3m_delinquency_flag_count": 885,
+          "next_6m_delinquency_flag_rate": 0.29802586499544753,
+          "next_6m_delinquency_flag_count": 1484,
+          "next_12m_default_flag_rate": 0.2653261324150817,
+          "next_12m_default_flag_count": 1701,
+          "next_12m_prepayment_flag_rate": 0.08425349811611908,
+          "next_12m_prepayment_flag_count": 160
+        }
+      },
+      "dti_band": {
+        "20-30%": {
+          "next_3m_delinquency_flag_rate": 0.1292234340059406,
+          "next_3m_delinquency_flag_count": 1247,
+          "next_6m_delinquency_flag_rate": 0.17345176940481935,
+          "next_6m_delinquency_flag_count": 1654,
+          "next_12m_default_flag_rate": 0.09517242189918902,
+          "next_12m_default_flag_count": 1233,
+          "next_12m_prepayment_flag_rate": 0.18418193670157748,
+          "next_12m_prepayment_flag_count": 1872
+        },
+        "30-36%": {
+          "next_3m_delinquency_flag_rate": 0.1446779673040605,
+          "next_3m_delinquency_flag_count": 1313,
+          "next_6m_delinquency_flag_rate": 0.2042831787719617,
+          "next_6m_delinquency_flag_count": 1891,
+          "next_12m_default_flag_rate": 0.13170761645077783,
+          "next_12m_default_flag_count": 1592,
+          "next_12m_prepayment_flag_rate": 0.18194597456440387,
+          "next_12m_prepayment_flag_count": 1739
+        },
+        "36-43%": {
+          "next_3m_delinquency_flag_rate": 0.15305360227410209,
+          "next_3m_delinquency_flag_count": 1408,
+          "next_6m_delinquency_flag_rate": 0.21915384513447356,
+          "next_6m_delinquency_flag_count": 1918,
+          "next_12m_default_flag_rate": 0.1278929313074587,
+          "next_12m_default_flag_count": 1551,
+          "next_12m_prepayment_flag_rate": 0.14138151029668816,
+          "next_12m_prepayment_flag_count": 1096
+        },
+        "43-50%": {
+          "next_3m_delinquency_flag_rate": 0.1566098158721676,
+          "next_3m_delinquency_flag_count": 1306,
+          "next_6m_delinquency_flag_rate": 0.22649589284223864,
+          "next_6m_delinquency_flag_count": 1804,
+          "next_12m_default_flag_rate": 0.15096110153242334,
+          "next_12m_default_flag_count": 1572,
+          "next_12m_prepayment_flag_rate": 0.09461529335462347,
+          "next_12m_prepayment_flag_count": 534
+        },
+        "<20%": {
+          "next_3m_delinquency_flag_rate": 0.10995829359292358,
+          "next_3m_delinquency_flag_count": 776,
+          "next_6m_delinquency_flag_rate": 0.13504213855226477,
+          "next_6m_delinquency_flag_count": 990,
+          "next_12m_default_flag_rate": 0.06910402033814293,
+          "next_12m_default_flag_count": 700,
+          "next_12m_prepayment_flag_rate": 0.1788870859698058,
+          "next_12m_prepayment_flag_count": 1366
+        },
+        ">50%": {
+          "next_3m_delinquency_flag_rate": 0.18393239880043658,
+          "next_3m_delinquency_flag_count": 901,
+          "next_6m_delinquency_flag_rate": 0.26959602027760077,
+          "next_6m_delinquency_flag_count": 1339,
+          "next_12m_default_flag_rate": 0.20134885752609585,
+          "next_12m_default_flag_count": 1257,
+          "next_12m_prepayment_flag_rate": 0.07939340513813628,
+          "next_12m_prepayment_flag_count": 292
+        }
+      },
+      "state": {
+        "AZ": {
+          "next_3m_delinquency_flag_rate": 0.14309828795807997,
+          "next_3m_delinquency_flag_count": 332,
+          "next_6m_delinquency_flag_rate": 0.1982906217710153,
+          "next_6m_delinquency_flag_count": 451,
+          "next_12m_default_flag_rate": 0.11310264763024488,
+          "next_12m_default_flag_count": 375,
+          "next_12m_prepayment_flag_rate": 0.16432631263810862,
+          "next_12m_prepayment_flag_count": 446
+        },
+        "CA": {
+          "next_3m_delinquency_flag_rate": 0.14452978508942216,
+          "next_3m_delinquency_flag_count": 367,
+          "next_6m_delinquency_flag_rate": 0.19312025024500284,
+          "next_6m_delinquency_flag_count": 494,
+          "next_12m_default_flag_rate": 0.10604899796828879,
+          "next_12m_default_flag_count": 322,
+          "next_12m_prepayment_flag_rate": 0.15933998567876964,
+          "next_12m_prepayment_flag_count": 413
+        },
+        "FL": {
+          "next_3m_delinquency_flag_rate": 0.14909885935582504,
+          "next_3m_delinquency_flag_count": 344,
+          "next_6m_delinquency_flag_rate": 0.21183678770701136,
+          "next_6m_delinquency_flag_count": 503,
+          "next_12m_default_flag_rate": 0.12176601333326119,
+          "next_12m_default_flag_count": 384,
+          "next_12m_prepayment_flag_rate": 0.17209307686810577,
+          "next_12m_prepayment_flag_count": 415
+        },
+        "GA": {
+          "next_3m_delinquency_flag_rate": 0.15283418957053335,
+          "next_3m_delinquency_flag_count": 382,
+          "next_6m_delinquency_flag_rate": 0.21750664997568672,
+          "next_6m_delinquency_flag_count": 484,
+          "next_12m_default_flag_rate": 0.13394399636709528,
+          "next_12m_default_flag_count": 411,
+          "next_12m_prepayment_flag_rate": 0.16151195720162823,
+          "next_12m_prepayment_flag_count": 294
+        },
+        "IL": {
+          "next_3m_delinquency_flag_rate": 0.14515551176449232,
+          "next_3m_delinquency_flag_count": 369,
+          "next_6m_delinquency_flag_rate": 0.21103236095197794,
+          "next_6m_delinquency_flag_count": 483,
+          "next_12m_default_flag_rate": 0.13164658808712248,
+          "next_12m_default_flag_count": 409,
+          "next_12m_prepayment_flag_rate": 0.1633293824005625,
+          "next_12m_prepayment_flag_count": 308
+        },
+        "IN": {
+          "next_3m_delinquency_flag_rate": 0.13847122886212618,
+          "next_3m_delinquency_flag_count": 327,
+          "next_6m_delinquency_flag_rate": 0.18493348805001114,
+          "next_6m_delinquency_flag_count": 420,
+          "next_12m_default_flag_rate": 0.11856697010752525,
+          "next_12m_default_flag_count": 355,
+          "next_12m_prepayment_flag_rate": 0.15255285472425664,
+          "next_12m_prepayment_flag_count": 320
+        },
+        "MA": {
+          "next_3m_delinquency_flag_rate": 0.14294422229955542,
+          "next_3m_delinquency_flag_count": 366,
+          "next_6m_delinquency_flag_rate": 0.19698007837785705,
+          "next_6m_delinquency_flag_count": 500,
+          "next_12m_default_flag_rate": 0.10867062710910184,
+          "next_12m_default_flag_count": 366,
+          "next_12m_prepayment_flag_rate": 0.17193789070007226,
+          "next_12m_prepayment_flag_count": 560
+        },
+        "MD": {
+          "next_3m_delinquency_flag_rate": 0.13601434813178123,
+          "next_3m_delinquency_flag_count": 299,
+          "next_6m_delinquency_flag_rate": 0.18869843498764372,
+          "next_6m_delinquency_flag_count": 376,
+          "next_12m_default_flag_rate": 0.1113485843897036,
+          "next_12m_default_flag_count": 302,
+          "next_12m_prepayment_flag_rate": 0.15879610378981093,
+          "next_12m_prepayment_flag_count": 345
+        },
+        "MI": {
+          "next_3m_delinquency_flag_rate": 0.13715101808976915,
+          "next_3m_delinquency_flag_count": 341,
+          "next_6m_delinquency_flag_rate": 0.18901458570128102,
+          "next_6m_delinquency_flag_count": 462,
+          "next_12m_default_flag_rate": 0.11070593211275559,
+          "next_12m_default_flag_count": 336,
+          "next_12m_prepayment_flag_rate": 0.13883526487568384,
+          "next_12m_prepayment_flag_count": 314
+        },
+        "MO": {
+          "next_3m_delinquency_flag_rate": 0.13975112961440844,
+          "next_3m_delinquency_flag_count": 275,
+          "next_6m_delinquency_flag_rate": 0.19200519808828392,
+          "next_6m_delinquency_flag_count": 374,
+          "next_12m_default_flag_rate": 0.117015403687844,
+          "next_12m_default_flag_count": 304,
+          "next_12m_prepayment_flag_rate": 0.13996470972037306,
+          "next_12m_prepayment_flag_count": 250
+        },
+        "NC": {
+          "next_3m_delinquency_flag_rate": 0.12696344942052515,
+          "next_3m_delinquency_flag_count": 306,
+          "next_6m_delinquency_flag_rate": 0.18185975306238852,
+          "next_6m_delinquency_flag_count": 401,
+          "next_12m_default_flag_rate": 0.1191393403593897,
+          "next_12m_default_flag_count": 362,
+          "next_12m_prepayment_flag_rate": 0.09426084689210423,
+          "next_12m_prepayment_flag_count": 169
+        },
+        "NJ": {
+          "next_3m_delinquency_flag_rate": 0.14124785279532595,
+          "next_3m_delinquency_flag_count": 338,
+          "next_6m_delinquency_flag_rate": 0.19298558622344414,
+          "next_6m_delinquency_flag_count": 488,
+          "next_12m_default_flag_rate": 0.1302709036590324,
+          "next_12m_default_flag_count": 473,
+          "next_12m_prepayment_flag_rate": 0.1559726325406037,
+          "next_12m_prepayment_flag_count": 363
+        },
+        "NY": {
+          "next_3m_delinquency_flag_rate": 0.14152944450518404,
+          "next_3m_delinquency_flag_count": 352,
+          "next_6m_delinquency_flag_rate": 0.1948005825072524,
+          "next_6m_delinquency_flag_count": 480,
+          "next_12m_default_flag_rate": 0.1150118113654974,
+          "next_12m_default_flag_count": 356,
+          "next_12m_prepayment_flag_rate": 0.1238691857422505,
+          "next_12m_prepayment_flag_count": 197
+        },
+        "OH": {
+          "next_3m_delinquency_flag_rate": 0.146603667539249,
+          "next_3m_delinquency_flag_count": 375,
+          "next_6m_delinquency_flag_rate": 0.2105836164576246,
+          "next_6m_delinquency_flag_count": 541,
+          "next_12m_default_flag_rate": 0.13114464763736877,
+          "next_12m_default_flag_count": 468,
+          "next_12m_prepayment_flag_rate": 0.13688271152082898,
+          "next_12m_prepayment_flag_count": 408
+        },
+        "PA": {
+          "next_3m_delinquency_flag_rate": 0.14484001596414395,
+          "next_3m_delinquency_flag_count": 364,
+          "next_6m_delinquency_flag_rate": 0.20606540682335608,
+          "next_6m_delinquency_flag_count": 527,
+          "next_12m_default_flag_rate": 0.12317505099140857,
+          "next_12m_default_flag_count": 418,
+          "next_12m_prepayment_flag_rate": 0.1671223313638799,
+          "next_12m_prepayment_flag_count": 389
+        },
+        "TN": {
+          "next_3m_delinquency_flag_rate": 0.15541224536205192,
+          "next_3m_delinquency_flag_count": 328,
+          "next_6m_delinquency_flag_rate": 0.223220063685197,
+          "next_6m_delinquency_flag_count": 543,
+          "next_12m_default_flag_rate": 0.1448838448092968,
+          "next_12m_default_flag_count": 442,
+          "next_12m_prepayment_flag_rate": 0.1759755213643157,
+          "next_12m_prepayment_flag_count": 465
+        },
+        "TX": {
+          "next_3m_delinquency_flag_rate": 0.14573020521659202,
+          "next_3m_delinquency_flag_count": 384,
+          "next_6m_delinquency_flag_rate": 0.20426380025409574,
+          "next_6m_delinquency_flag_count": 506,
+          "next_12m_default_flag_rate": 0.1303320728459379,
+          "next_12m_default_flag_count": 413,
+          "next_12m_prepayment_flag_rate": 0.13054924189768505,
+          "next_12m_prepayment_flag_count": 310
+        },
+        "VA": {
+          "next_3m_delinquency_flag_rate": 0.14925361303186319,
+          "next_3m_delinquency_flag_count": 371,
+          "next_6m_delinquency_flag_rate": 0.20465939836560834,
+          "next_6m_delinquency_flag_count": 505,
+          "next_12m_default_flag_rate": 0.14475583893547972,
+          "next_12m_default_flag_count": 501,
+          "next_12m_prepayment_flag_rate": 0.12993724201745888,
+          "next_12m_prepayment_flag_count": 222
+        },
+        "WA": {
+          "next_3m_delinquency_flag_rate": 0.14461281440896173,
+          "next_3m_delinquency_flag_count": 390,
+          "next_6m_delinquency_flag_rate": 0.19534341414904324,
+          "next_6m_delinquency_flag_count": 497,
+          "next_12m_default_flag_rate": 0.11516397225662837,
+          "next_12m_default_flag_count": 380,
+          "next_12m_prepayment_flag_rate": 0.148111355001396,
+          "next_12m_prepayment_flag_count": 374
+        },
+        "WI": {
+          "next_3m_delinquency_flag_rate": 0.15301676509671247,
+          "next_3m_delinquency_flag_count": 341,
+          "next_6m_delinquency_flag_rate": 0.22092363080689756,
+          "next_6m_delinquency_flag_count": 561,
+          "next_12m_default_flag_rate": 0.16180453168631173,
+          "next_12m_default_flag_count": 528,
+          "next_12m_prepayment_flag_rate": 0.15168837355747974,
+          "next_12m_prepayment_flag_count": 337
+        }
+      },
+      "loan_purpose": {
+        "Cash-out Refinance": {
+          "next_3m_delinquency_flag_rate": 0.1438955716615781,
+          "next_3m_delinquency_flag_count": 1396,
+          "next_6m_delinquency_flag_rate": 0.19913400765942607,
+          "next_6m_delinquency_flag_count": 1891,
+          "next_12m_default_flag_rate": 0.1276601863911094,
+          "next_12m_default_flag_count": 1616,
+          "next_12m_prepayment_flag_rate": 0.16621477744366514,
+          "next_12m_prepayment_flag_count": 1782
+        },
+        "Purchase": {
+          "next_3m_delinquency_flag_rate": 0.14361081773515078,
+          "next_3m_delinquency_flag_count": 3358,
+          "next_6m_delinquency_flag_rate": 0.20230442152893,
+          "next_6m_delinquency_flag_count": 4815,
+          "next_12m_default_flag_rate": 0.12053272867710445,
+          "next_12m_default_flag_count": 3844,
+          "next_12m_prepayment_flag_rate": 0.1371910163700955,
+          "next_12m_prepayment_flag_count": 2986
+        },
+        "Refinance": {
+          "next_3m_delinquency_flag_rate": 0.1440215931008782,
+          "next_3m_delinquency_flag_count": 2197,
+          "next_6m_delinquency_flag_rate": 0.19889465247003846,
+          "next_6m_delinquency_flag_count": 2890,
+          "next_12m_default_flag_rate": 0.12805830864776296,
+          "next_12m_default_flag_count": 2445,
+          "next_12m_prepayment_flag_rate": 0.1584004047164362,
+          "next_12m_prepayment_flag_count": 2131
+        }
+      },
+      "servicer_name": {
+        "Servicer_A": {
+          "next_3m_delinquency_flag_rate": 0.14299655363025315,
+          "next_3m_delinquency_flag_count": 1429,
+          "next_6m_delinquency_flag_rate": 0.20266376812140896,
+          "next_6m_delinquency_flag_count": 1955,
+          "next_12m_default_flag_rate": 0.13332987936606314,
+          "next_12m_default_flag_count": 1708,
+          "next_12m_prepayment_flag_rate": 0.14259053580415298,
+          "next_12m_prepayment_flag_count": 1165
+        },
+        "Servicer_B": {
+          "next_3m_delinquency_flag_rate": 0.13676788328477518,
+          "next_3m_delinquency_flag_count": 1331,
+          "next_6m_delinquency_flag_rate": 0.1868068345011689,
+          "next_6m_delinquency_flag_count": 1779,
+          "next_12m_default_flag_rate": 0.11707787360423738,
+          "next_12m_default_flag_count": 1470,
+          "next_12m_prepayment_flag_rate": 0.14583052920088793,
+          "next_12m_prepayment_flag_count": 1309
+        },
+        "Servicer_C": {
+          "next_3m_delinquency_flag_rate": 0.14439763443454456,
+          "next_3m_delinquency_flag_count": 1258,
+          "next_6m_delinquency_flag_rate": 0.19957403834600163,
+          "next_6m_delinquency_flag_count": 1718,
+          "next_12m_default_flag_rate": 0.1210826541045423,
+          "next_12m_default_flag_count": 1408,
+          "next_12m_prepayment_flag_rate": 0.1657669319959198,
+          "next_12m_prepayment_flag_count": 1513
+        },
+        "Servicer_D": {
+          "next_3m_delinquency_flag_rate": 0.14501029039578928,
+          "next_3m_delinquency_flag_count": 1468,
+          "next_6m_delinquency_flag_rate": 0.20438006865792338,
+          "next_6m_delinquency_flag_count": 2143,
+          "next_12m_default_flag_rate": 0.12105060736189072,
+          "next_12m_default_flag_count": 1684,
+          "next_12m_prepayment_flag_rate": 0.1332973222778014,
+          "next_12m_prepayment_flag_count": 1142
+        },
+        "Servicer_E": {
+          "next_3m_delinquency_flag_rate": 0.14967975566538594,
+          "next_3m_delinquency_flag_count": 1465,
+          "next_6m_delinquency_flag_rate": 0.20909513154726964,
+          "next_6m_delinquency_flag_count": 2001,
+          "next_12m_default_flag_rate": 0.12808188560482578,
+          "next_12m_default_flag_count": 1635,
+          "next_12m_prepayment_flag_rate": 0.16244762967469326,
+          "next_12m_prepayment_flag_count": 1770
+        }
+      }
+    },
+    "driver_explanations": {
+      "current_balance": {
+        "base_mean": 334827.7978141191,
+        "scenario_mean": 330585.08455149195,
+        "pct_change": -1.2671329233490023
+      },
+      "interest_rate": {
+        "base_mean": 0.05615987822742939,
+        "scenario_mean": 0.05549340433190913,
+        "pct_change": -1.1867438401865094
+      },
+      "days_past_due": {
+        "base_mean": 13.65013636733697,
+        "scenario_mean": 13.478405482535472,
+        "pct_change": -1.2580891514932266
+      },
+      "servicer_current_balance": {
+        "base_mean": 310700.0750540375,
+        "scenario_mean": 93210.64693856555,
+        "pct_change": -69.9997990272921
+      },
+      "servicer_days_past_due": {
+        "base_mean": 9.446558365432926,
+        "scenario_mean": 2.8339864946340287,
+        "pct_change": -69.99979902729208
+      },
+      "predictions": {
+        "next_3m_delinquency_flag": {
+          "base_rate": 0.14379597250693354,
+          "scenario_rate": 0.14379177900259454,
+          "absolute_change": -4.1935043390006754e-06,
+          "relative_change": -0.002916287755415732
+        },
+        "next_6m_delinquency_flag": {
+          "base_rate": 0.20356525583825716,
+          "scenario_rate": 0.2006402231020678,
+          "absolute_change": -0.0029250327361893536,
+          "relative_change": -1.4369017562178878
+        },
+        "next_12m_default_flag": {
+          "base_rate": 0.12727601591703847,
+          "scenario_rate": 0.124231869269335,
+          "absolute_change": -0.0030441466477034718,
+          "relative_change": -2.3917677071913683
+        },
+        "next_12m_prepayment_flag": {
+          "base_rate": 0.14784557257124484,
+          "scenario_rate": 0.14941167161302646,
+          "absolute_change": 0.0015660990417816212,
+          "relative_change": 1.0592803115743887
+        }
+      }
+    },
+    "feature_shifts": {
+      "loan_age_months": 0.0,
+      "remaining_term_months": 0.0,
+      "original_balance": 0.0,
+      "current_balance": -1.2671329233490023,
+      "interest_rate": -1.1867438401865094,
+      "days_past_due": -1.2580891514932266,
+      "modification_flag": 0.0,
+      "prepayment_flag": 0.0,
+      "default_flag": 0.0,
+      "servicer_current_balance": -69.9997990272921,
+      "servicer_days_past_due": -69.99979902729208,
+      "data_quality_flag": 0.0
+    }
+  },
+  "adverse_credit": {
+    "scenario_name": "adverse_credit",
+    "aggregate_projections": {
+      "next_3m_delinquency_flag_rate": 0.22461770688795793,
+      "next_3m_delinquency_flag_count": 19978,
+      "next_6m_delinquency_flag_rate": 0.2792450718969803,
+      "next_6m_delinquency_flag_count": 22469,
+      "next_12m_default_flag_rate": 0.17873490973910605,
+      "next_12m_default_flag_count": 14902,
+      "next_12m_prepayment_flag_rate": 0.12941602165059096,
+      "next_12m_prepayment_flag_count": 5366,
+      "avg_next_3m_delinquency_flag_prob": 0.22461770688795793,
+      "avg_next_6m_delinquency_flag_prob": 0.2792450718969803,
+      "avg_next_12m_default_flag_prob": 0.17873490973910605,
+      "avg_next_12m_prepayment_flag_prob": 0.12941602165059096
+    },
+    "segment_projections": {
+      "credit_score_band": {
+        "620-659": {
+          "next_3m_delinquency_flag_rate": 0.25221166126105315,
+          "next_3m_delinquency_flag_count": 4288,
+          "next_6m_delinquency_flag_rate": 0.31468162613789463,
+          "next_6m_delinquency_flag_count": 4763,
+          "next_12m_default_flag_rate": 0.21306169184336773,
+          "next_12m_default_flag_count": 3834,
+          "next_12m_prepayment_flag_rate": 0.08307293495214134,
+          "next_12m_prepayment_flag_count": 215
+        },
+        "660-699": {
+          "next_3m_delinquency_flag_rate": 0.21500502803977484,
+          "next_3m_delinquency_flag_count": 3000,
+          "next_6m_delinquency_flag_rate": 0.2657158255027345,
+          "next_6m_delinquency_flag_count": 3300,
+          "next_12m_default_flag_rate": 0.1520149954150193,
+          "next_12m_default_flag_count": 1837,
+          "next_12m_prepayment_flag_rate": 0.14715820369676505,
+          "next_12m_prepayment_flag_count": 888
+        },
+        "700-739": {
+          "next_3m_delinquency_flag_rate": 0.19751467382017301,
+          "next_3m_delinquency_flag_count": 2866,
+          "next_6m_delinquency_flag_rate": 0.2413506641751031,
+          "next_6m_delinquency_flag_count": 3144,
+          "next_12m_default_flag_rate": 0.12997915445180055,
+          "next_12m_default_flag_count": 1402,
+          "next_12m_prepayment_flag_rate": 0.18028909749137986,
+          "next_12m_prepayment_flag_count": 1290
+        },
+        "740-779": {
+          "next_3m_delinquency_flag_rate": 0.18490531552242012,
+          "next_3m_delinquency_flag_count": 2792,
+          "next_6m_delinquency_flag_rate": 0.22239153407747664,
+          "next_6m_delinquency_flag_count": 2992,
+          "next_12m_default_flag_rate": 0.11206458951752961,
+          "next_12m_default_flag_count": 1221,
+          "next_12m_prepayment_flag_rate": 0.16203417289113967,
+          "next_12m_prepayment_flag_count": 1340
+        },
+        "780+": {
+          "next_3m_delinquency_flag_rate": 0.18447048469295255,
+          "next_3m_delinquency_flag_count": 1812,
+          "next_6m_delinquency_flag_rate": 0.2124396719959349,
+          "next_6m_delinquency_flag_count": 1990,
+          "next_12m_default_flag_rate": 0.09924823908749106,
+          "next_12m_default_flag_count": 675,
+          "next_12m_prepayment_flag_rate": 0.20282723387947685,
+          "next_12m_prepayment_flag_count": 1378
+        },
+        "<620": {
+          "next_3m_delinquency_flag_rate": 0.2673604376480242,
+          "next_3m_delinquency_flag_count": 5220,
+          "next_6m_delinquency_flag_rate": 0.34695705944710065,
+          "next_6m_delinquency_flag_count": 6280,
+          "next_12m_default_flag_rate": 0.2742800233762101,
+          "next_12m_default_flag_count": 5933,
+          "next_12m_prepayment_flag_rate": 0.07248465380264041,
+          "next_12m_prepayment_flag_count": 255
+        }
+      },
+      "ltv_band": {
+        "60-70%": {
+          "next_3m_delinquency_flag_rate": 0.21359866075085862,
+          "next_3m_delinquency_flag_count": 3032,
+          "next_6m_delinquency_flag_rate": 0.254600386537133,
+          "next_6m_delinquency_flag_count": 3252,
+          "next_12m_default_flag_rate": 0.12601523402509823,
+          "next_12m_default_flag_count": 1486,
+          "next_12m_prepayment_flag_rate": 0.1668383264274368,
+          "next_12m_prepayment_flag_count": 1251
+        },
+        "70-80%": {
+          "next_3m_delinquency_flag_rate": 0.21666613292756068,
+          "next_3m_delinquency_flag_count": 4033,
+          "next_6m_delinquency_flag_rate": 0.258568536571947,
+          "next_6m_delinquency_flag_count": 4360,
+          "next_12m_default_flag_rate": 0.14967717837076613,
+          "next_12m_default_flag_count": 2597,
+          "next_12m_prepayment_flag_rate": 0.14329371993708304,
+          "next_12m_prepayment_flag_count": 1544
+        },
+        "80-90%": {
+          "next_3m_delinquency_flag_rate": 0.231345838452147,
+          "next_3m_delinquency_flag_count": 4108,
+          "next_6m_delinquency_flag_rate": 0.30069185173017227,
+          "next_6m_delinquency_flag_count": 4628,
+          "next_12m_default_flag_rate": 0.19198295163977444,
+          "next_12m_default_flag_count": 3205,
+          "next_12m_prepayment_flag_rate": 0.12410353164749695,
+          "next_12m_prepayment_flag_count": 717
+        },
+        "90-100%": {
+          "next_3m_delinquency_flag_rate": 0.23984616890034507,
+          "next_3m_delinquency_flag_count": 4025,
+          "next_6m_delinquency_flag_rate": 0.3023862215242885,
+          "next_6m_delinquency_flag_count": 4732,
+          "next_12m_default_flag_rate": 0.23441255376395956,
+          "next_12m_default_flag_count": 4063,
+          "next_12m_prepayment_flag_rate": 0.09313078714320573,
+          "next_12m_prepayment_flag_count": 428
+        },
+        "<60%": {
+          "next_3m_delinquency_flag_rate": 0.19219455385818593,
+          "next_3m_delinquency_flag_count": 2784,
+          "next_6m_delinquency_flag_rate": 0.22705992279963896,
+          "next_6m_delinquency_flag_count": 2973,
+          "next_12m_default_flag_rate": 0.09313705798235516,
+          "next_12m_default_flag_count": 948,
+          "next_12m_prepayment_flag_rate": 0.16477942384816294,
+          "next_12m_prepayment_flag_count": 1330
+        },
+        ">100%": {
+          "next_3m_delinquency_flag_rate": 0.2667675183098838,
+          "next_3m_delinquency_flag_count": 1996,
+          "next_6m_delinquency_flag_rate": 0.35588100732640654,
+          "next_6m_delinquency_flag_count": 2524,
+          "next_12m_default_flag_rate": 0.32419310841317495,
+          "next_12m_default_flag_count": 2603,
+          "next_12m_prepayment_flag_rate": 0.06718373771170696,
+          "next_12m_prepayment_flag_count": 96
+        }
+      },
+      "dti_band": {
+        "20-30%": {
+          "next_3m_delinquency_flag_rate": 0.21089816673307343,
+          "next_3m_delinquency_flag_count": 3812,
+          "next_6m_delinquency_flag_rate": 0.2527523272489744,
+          "next_6m_delinquency_flag_count": 4195,
+          "next_12m_default_flag_rate": 0.1391526676439292,
+          "next_12m_default_flag_count": 2264,
+          "next_12m_prepayment_flag_rate": 0.16060159194340487,
+          "next_12m_prepayment_flag_count": 1568
+        },
+        "30-36%": {
+          "next_3m_delinquency_flag_rate": 0.2262239891114561,
+          "next_3m_delinquency_flag_count": 3827,
+          "next_6m_delinquency_flag_rate": 0.2829331030749788,
+          "next_6m_delinquency_flag_count": 4344,
+          "next_12m_default_flag_rate": 0.18502946810330773,
+          "next_12m_default_flag_count": 2957,
+          "next_12m_prepayment_flag_rate": 0.15739519627839463,
+          "next_12m_prepayment_flag_count": 1368
+        },
+        "36-43%": {
+          "next_3m_delinquency_flag_rate": 0.23498397245994787,
+          "next_3m_delinquency_flag_count": 4012,
+          "next_6m_delinquency_flag_rate": 0.2977466677390419,
+          "next_6m_delinquency_flag_count": 4492,
+          "next_12m_default_flag_rate": 0.18684420854072417,
+          "next_12m_default_flag_count": 3102,
+          "next_12m_prepayment_flag_rate": 0.12575740331720722,
+          "next_12m_prepayment_flag_count": 845
+        },
+        "43-50%": {
+          "next_3m_delinquency_flag_rate": 0.2361815553450122,
+          "next_3m_delinquency_flag_count": 3471,
+          "next_6m_delinquency_flag_rate": 0.3031786929518441,
+          "next_6m_delinquency_flag_count": 3906,
+          "next_12m_default_flag_rate": 0.21300496135988453,
+          "next_12m_default_flag_count": 2921,
+          "next_12m_prepayment_flag_rate": 0.07737078046371221,
+          "next_12m_prepayment_flag_count": 309
+        },
+        "<20%": {
+          "next_3m_delinquency_flag_rate": 0.19196133502709906,
+          "next_3m_delinquency_flag_count": 2760,
+          "next_6m_delinquency_flag_rate": 0.22048659993110697,
+          "next_6m_delinquency_flag_count": 3028,
+          "next_12m_default_flag_rate": 0.11822739699274198,
+          "next_12m_default_flag_count": 1572,
+          "next_12m_prepayment_flag_rate": 0.15566215014312812,
+          "next_12m_prepayment_flag_count": 1073
+        },
+        ">50%": {
+          "next_3m_delinquency_flag_rate": 0.2596925916745528,
+          "next_3m_delinquency_flag_count": 2096,
+          "next_6m_delinquency_flag_rate": 0.33926925449215756,
+          "next_6m_delinquency_flag_count": 2504,
+          "next_12m_default_flag_rate": 0.26588916030428383,
+          "next_12m_default_flag_count": 2086,
+          "next_12m_prepayment_flag_rate": 0.06720469813965758,
+          "next_12m_prepayment_flag_count": 203
+        }
+      },
+      "state": {
+        "AZ": {
+          "next_3m_delinquency_flag_rate": 0.22622186517546178,
+          "next_3m_delinquency_flag_count": 945,
+          "next_6m_delinquency_flag_rate": 0.27711263284320187,
+          "next_6m_delinquency_flag_count": 1071,
+          "next_12m_default_flag_rate": 0.16664217062562708,
+          "next_12m_default_flag_count": 701,
+          "next_12m_prepayment_flag_rate": 0.1417293397645904,
+          "next_12m_prepayment_flag_count": 378
+        },
+        "CA": {
+          "next_3m_delinquency_flag_rate": 0.2238997669571893,
+          "next_3m_delinquency_flag_count": 1032,
+          "next_6m_delinquency_flag_rate": 0.2716683177778908,
+          "next_6m_delinquency_flag_count": 1158,
+          "next_12m_default_flag_rate": 0.15667909569403093,
+          "next_12m_default_flag_count": 641,
+          "next_12m_prepayment_flag_rate": 0.13944251585135056,
+          "next_12m_prepayment_flag_count": 345
+        },
+        "FL": {
+          "next_3m_delinquency_flag_rate": 0.2285013385970812,
+          "next_3m_delinquency_flag_count": 967,
+          "next_6m_delinquency_flag_rate": 0.2860500798632316,
+          "next_6m_delinquency_flag_count": 1107,
+          "next_12m_default_flag_rate": 0.17396594166720922,
+          "next_12m_default_flag_count": 714,
+          "next_12m_prepayment_flag_rate": 0.14980705600650984,
+          "next_12m_prepayment_flag_count": 302
+        },
+        "GA": {
+          "next_3m_delinquency_flag_rate": 0.23274562010535854,
+          "next_3m_delinquency_flag_count": 1014,
+          "next_6m_delinquency_flag_rate": 0.29195877357751154,
+          "next_6m_delinquency_flag_count": 1117,
+          "next_12m_default_flag_rate": 0.19051814496489278,
+          "next_12m_default_flag_count": 783,
+          "next_12m_prepayment_flag_rate": 0.13888472679001457,
+          "next_12m_prepayment_flag_count": 197
+        },
+        "IL": {
+          "next_3m_delinquency_flag_rate": 0.22366036223307514,
+          "next_3m_delinquency_flag_count": 1024,
+          "next_6m_delinquency_flag_rate": 0.28425581377957776,
+          "next_6m_delinquency_flag_count": 1126,
+          "next_12m_default_flag_rate": 0.18600397310988617,
+          "next_12m_default_flag_count": 797,
+          "next_12m_prepayment_flag_rate": 0.13963910774024188,
+          "next_12m_prepayment_flag_count": 240
+        },
+        "IN": {
+          "next_3m_delinquency_flag_rate": 0.2134144575955319,
+          "next_3m_delinquency_flag_count": 959,
+          "next_6m_delinquency_flag_rate": 0.2585078205446112,
+          "next_6m_delinquency_flag_count": 1054,
+          "next_12m_default_flag_rate": 0.16546360278270117,
+          "next_12m_default_flag_count": 670,
+          "next_12m_prepayment_flag_rate": 0.1308390537024201,
+          "next_12m_prepayment_flag_count": 244
+        },
+        "MA": {
+          "next_3m_delinquency_flag_rate": 0.2287721783799591,
+          "next_3m_delinquency_flag_count": 1054,
+          "next_6m_delinquency_flag_rate": 0.2827566746634856,
+          "next_6m_delinquency_flag_count": 1162,
+          "next_12m_default_flag_rate": 0.16156171178983958,
+          "next_12m_default_flag_count": 707,
+          "next_12m_prepayment_flag_rate": 0.15774472289918043,
+          "next_12m_prepayment_flag_count": 466
+        },
+        "MD": {
+          "next_3m_delinquency_flag_rate": 0.22081152648540645,
+          "next_3m_delinquency_flag_count": 952,
+          "next_6m_delinquency_flag_rate": 0.2725637709398179,
+          "next_6m_delinquency_flag_count": 1017,
+          "next_12m_default_flag_rate": 0.16908072405247573,
+          "next_12m_default_flag_count": 646,
+          "next_12m_prepayment_flag_rate": 0.1369104070476693,
+          "next_12m_prepayment_flag_count": 270
+        },
+        "MI": {
+          "next_3m_delinquency_flag_rate": 0.22278411763644912,
+          "next_3m_delinquency_flag_count": 1053,
+          "next_6m_delinquency_flag_rate": 0.2744360118164426,
+          "next_6m_delinquency_flag_count": 1177,
+          "next_12m_default_flag_rate": 0.1681938573252671,
+          "next_12m_default_flag_count": 713,
+          "next_12m_prepayment_flag_rate": 0.12039817035659615,
+          "next_12m_prepayment_flag_count": 256
+        },
+        "MO": {
+          "next_3m_delinquency_flag_rate": 0.22219618509723438,
+          "next_3m_delinquency_flag_count": 861,
+          "next_6m_delinquency_flag_rate": 0.2758751709094363,
+          "next_6m_delinquency_flag_count": 960,
+          "next_12m_default_flag_rate": 0.17705769822280926,
+          "next_12m_default_flag_count": 630,
+          "next_12m_prepayment_flag_rate": 0.11724998962227905,
+          "next_12m_prepayment_flag_count": 178
+        },
+        "NC": {
+          "next_3m_delinquency_flag_rate": 0.20878767210357596,
+          "next_3m_delinquency_flag_count": 1004,
+          "next_6m_delinquency_flag_rate": 0.2622224940443674,
+          "next_6m_delinquency_flag_count": 1101,
+          "next_12m_default_flag_rate": 0.17502948437110485,
+          "next_12m_default_flag_count": 746,
+          "next_12m_prepayment_flag_rate": 0.08511413933237824,
+          "next_12m_prepayment_flag_count": 133
+        },
+        "NJ": {
+          "next_3m_delinquency_flag_rate": 0.2161242292975326,
+          "next_3m_delinquency_flag_count": 963,
+          "next_6m_delinquency_flag_rate": 0.2708730401978169,
+          "next_6m_delinquency_flag_count": 1106,
+          "next_12m_default_flag_rate": 0.18337173933707887,
+          "next_12m_default_flag_count": 813,
+          "next_12m_prepayment_flag_rate": 0.13389225852515074,
+          "next_12m_prepayment_flag_count": 277
+        },
+        "NY": {
+          "next_3m_delinquency_flag_rate": 0.22136968730744214,
+          "next_3m_delinquency_flag_count": 1015,
+          "next_6m_delinquency_flag_rate": 0.27474937294630203,
+          "next_6m_delinquency_flag_count": 1148,
+          "next_12m_default_flag_rate": 0.17089249412057742,
+          "next_12m_default_flag_count": 725,
+          "next_12m_prepayment_flag_rate": 0.10890839054163892,
+          "next_12m_prepayment_flag_count": 119
+        },
+        "OH": {
+          "next_3m_delinquency_flag_rate": 0.2289566239159907,
+          "next_3m_delinquency_flag_count": 1064,
+          "next_6m_delinquency_flag_rate": 0.2875112333962583,
+          "next_6m_delinquency_flag_count": 1203,
+          "next_12m_default_flag_rate": 0.18369548238423672,
+          "next_12m_default_flag_count": 798,
+          "next_12m_prepayment_flag_rate": 0.12361027112496298,
+          "next_12m_prepayment_flag_count": 359
+        },
+        "PA": {
+          "next_3m_delinquency_flag_rate": 0.22755782595261403,
+          "next_3m_delinquency_flag_count": 1033,
+          "next_6m_delinquency_flag_rate": 0.2918327650969456,
+          "next_6m_delinquency_flag_count": 1207,
+          "next_12m_default_flag_rate": 0.180036225753594,
+          "next_12m_default_flag_count": 768,
+          "next_12m_prepayment_flag_rate": 0.14099168048734445,
+          "next_12m_prepayment_flag_count": 310
+        },
+        "TN": {
+          "next_3m_delinquency_flag_rate": 0.23407476489527004,
+          "next_3m_delinquency_flag_count": 890,
+          "next_6m_delinquency_flag_rate": 0.298901455919763,
+          "next_6m_delinquency_flag_count": 1086,
+          "next_12m_default_flag_rate": 0.2001586360993235,
+          "next_12m_default_flag_count": 743,
+          "next_12m_prepayment_flag_rate": 0.15009450475017186,
+          "next_12m_prepayment_flag_count": 359
+        },
+        "TX": {
+          "next_3m_delinquency_flag_rate": 0.22353995809873567,
+          "next_3m_delinquency_flag_count": 1014,
+          "next_6m_delinquency_flag_rate": 0.2798003023808851,
+          "next_6m_delinquency_flag_count": 1127,
+          "next_12m_default_flag_rate": 0.18422511709176412,
+          "next_12m_default_flag_count": 768,
+          "next_12m_prepayment_flag_rate": 0.11165743681972692,
+          "next_12m_prepayment_flag_count": 226
+        },
+        "VA": {
+          "next_3m_delinquency_flag_rate": 0.22834261017789387,
+          "next_3m_delinquency_flag_count": 1032,
+          "next_6m_delinquency_flag_rate": 0.2807358956514023,
+          "next_6m_delinquency_flag_count": 1162,
+          "next_12m_default_flag_rate": 0.19740414488770888,
+          "next_12m_default_flag_count": 876,
+          "next_12m_prepayment_flag_rate": 0.10921415170479869,
+          "next_12m_prepayment_flag_count": 122
+        },
+        "WA": {
+          "next_3m_delinquency_flag_rate": 0.22858508733064306,
+          "next_3m_delinquency_flag_count": 1115,
+          "next_6m_delinquency_flag_rate": 0.27984877056003604,
+          "next_6m_delinquency_flag_count": 1219,
+          "next_12m_default_flag_rate": 0.17147567267378433,
+          "next_12m_default_flag_count": 760,
+          "next_12m_prepayment_flag_rate": 0.12821906865281857,
+          "next_12m_prepayment_flag_count": 307
+        },
+        "WI": {
+          "next_3m_delinquency_flag_rate": 0.23467044987422142,
+          "next_3m_delinquency_flag_count": 987,
+          "next_6m_delinquency_flag_rate": 0.2877971228159226,
+          "next_6m_delinquency_flag_count": 1161,
+          "next_12m_default_flag_rate": 0.21813160153671346,
+          "next_12m_default_flag_count": 903,
+          "next_12m_prepayment_flag_rate": 0.1306260492349746,
+          "next_12m_prepayment_flag_count": 278
+        }
+      },
+      "loan_purpose": {
+        "Cash-out Refinance": {
+          "next_3m_delinquency_flag_rate": 0.22778957037842576,
+          "next_3m_delinquency_flag_count": 4097,
+          "next_6m_delinquency_flag_rate": 0.28053000010895834,
+          "next_6m_delinquency_flag_count": 4573,
+          "next_12m_default_flag_rate": 0.18534955292183797,
+          "next_12m_default_flag_count": 3111,
+          "next_12m_prepayment_flag_rate": 0.14389184751419143,
+          "next_12m_prepayment_flag_count": 1438
+        },
+        "Purchase": {
+          "next_3m_delinquency_flag_rate": 0.2236613107854854,
+          "next_3m_delinquency_flag_count": 9790,
+          "next_6m_delinquency_flag_rate": 0.2801190104649184,
+          "next_6m_delinquency_flag_count": 11137,
+          "next_12m_default_flag_rate": 0.1736059259462437,
+          "next_12m_default_flag_count": 7170,
+          "next_12m_prepayment_flag_rate": 0.11961625612084485,
+          "next_12m_prepayment_flag_count": 2302
+        },
+        "Refinance": {
+          "next_3m_delinquency_flag_rate": 0.22408292515765438,
+          "next_3m_delinquency_flag_count": 6091,
+          "next_6m_delinquency_flag_rate": 0.27694407345547173,
+          "next_6m_delinquency_flag_count": 6759,
+          "next_12m_default_flag_rate": 0.18279926896373597,
+          "next_12m_default_flag_count": 4621,
+          "next_12m_prepayment_flag_rate": 0.13595632375471411,
+          "next_12m_prepayment_flag_count": 1626
+        }
+      },
+      "servicer_name": {
+        "Servicer_A": {
+          "next_3m_delinquency_flag_rate": 0.22759221559464138,
+          "next_3m_delinquency_flag_count": 4200,
+          "next_6m_delinquency_flag_rate": 0.2861419956823012,
+          "next_6m_delinquency_flag_count": 4718,
+          "next_12m_default_flag_rate": 0.19000992784376816,
+          "next_12m_default_flag_count": 3236,
+          "next_12m_prepayment_flag_rate": 0.11704705988540796,
+          "next_12m_prepayment_flag_count": 739
+        },
+        "Servicer_B": {
+          "next_3m_delinquency_flag_rate": 0.21982249980663507,
+          "next_3m_delinquency_flag_count": 3895,
+          "next_6m_delinquency_flag_rate": 0.26611561414161033,
+          "next_6m_delinquency_flag_count": 4327,
+          "next_12m_default_flag_rate": 0.17172333680224589,
+          "next_12m_default_flag_count": 2886,
+          "next_12m_prepayment_flag_rate": 0.12680531963244324,
+          "next_12m_prepayment_flag_count": 1050
+        },
+        "Servicer_C": {
+          "next_3m_delinquency_flag_rate": 0.22167762189298545,
+          "next_3m_delinquency_flag_count": 3591,
+          "next_6m_delinquency_flag_rate": 0.2747765053933999,
+          "next_6m_delinquency_flag_count": 3996,
+          "next_12m_default_flag_rate": 0.17367434096260445,
+          "next_12m_default_flag_count": 2641,
+          "next_12m_prepayment_flag_rate": 0.14387817756176297,
+          "next_12m_prepayment_flag_count": 1242
+        },
+        "Servicer_D": {
+          "next_3m_delinquency_flag_rate": 0.22525836283510903,
+          "next_3m_delinquency_flag_count": 4251,
+          "next_6m_delinquency_flag_rate": 0.2813040193555007,
+          "next_6m_delinquency_flag_count": 4871,
+          "next_12m_default_flag_rate": 0.17597225600678262,
+          "next_12m_default_flag_count": 3165,
+          "next_12m_prepayment_flag_rate": 0.11811398935698458,
+          "next_12m_prepayment_flag_count": 927
+        },
+        "Servicer_E": {
+          "next_3m_delinquency_flag_rate": 0.22825075887081797,
+          "next_3m_delinquency_flag_count": 4041,
+          "next_6m_delinquency_flag_rate": 0.2868512881252504,
+          "next_6m_delinquency_flag_count": 4557,
+          "next_12m_default_flag_rate": 0.18146945985885457,
+          "next_12m_default_flag_count": 2974,
+          "next_12m_prepayment_flag_rate": 0.14387555162385862,
+          "next_12m_prepayment_flag_count": 1408
+        }
+      }
+    },
+    "driver_explanations": {
+      "current_balance": {
+        "base_mean": 334827.7978141191,
+        "scenario_mean": 330585.08455149195,
+        "pct_change": -1.2671329233490023
+      },
+      "interest_rate": {
+        "base_mean": 0.05615987822742939,
+        "scenario_mean": 0.05549340433190913,
+        "pct_change": -1.1867438401865094
+      },
+      "days_past_due": {
+        "base_mean": 13.65013636733697,
+        "scenario_mean": 20.762771815587442,
+        "pct_change": 52.10669884053393
+      },
+      "servicer_current_balance": {
+        "base_mean": 310700.0750540375,
+        "scenario_mean": 93210.64693856555,
+        "pct_change": -69.9997990272921
+      },
+      "servicer_days_past_due": {
+        "base_mean": 9.446558365432926,
+        "scenario_mean": 2.8339864946340287,
+        "pct_change": -69.99979902729208
+      },
+      "predictions": {
+        "next_3m_delinquency_flag": {
+          "base_rate": 0.14379597250693354,
+          "scenario_rate": 0.22461770688795793,
+          "absolute_change": 0.08082173438102438,
+          "relative_change": 56.20584010245998
+        },
+        "next_6m_delinquency_flag": {
+          "base_rate": 0.20356525583825716,
+          "scenario_rate": 0.2792450718969803,
+          "absolute_change": 0.07567981605872312,
+          "relative_change": 37.17717728749082
+        },
+        "next_12m_default_flag": {
+          "base_rate": 0.12727601591703847,
+          "scenario_rate": 0.17873490973910605,
+          "absolute_change": 0.051458893822067586,
+          "relative_change": 40.430943293832925
+        },
+        "next_12m_prepayment_flag": {
+          "base_rate": 0.14784557257124484,
+          "scenario_rate": 0.12941602165059096,
+          "absolute_change": -0.018429550920653875,
+          "relative_change": -12.465406031535316
+        }
+      }
+    },
+    "feature_shifts": {
+      "loan_age_months": 0.0,
+      "remaining_term_months": 0.0,
+      "original_balance": 0.0,
+      "current_balance": -1.2671329233490023,
+      "interest_rate": -1.1867438401865094,
+      "days_past_due": 52.10669884053393,
+      "modification_flag": 0.0,
+      "prepayment_flag": 0.0,
+      "default_flag": 0.0,
+      "servicer_current_balance": -69.9997990272921,
+      "servicer_days_past_due": -69.99979902729208,
+      "data_quality_flag": 0.0
+    }
+  },
+  "high_prepayment": {
+    "scenario_name": "high_prepayment",
+    "aggregate_projections": {
+      "next_3m_delinquency_flag_rate": 0.14379177900259454,
+      "next_3m_delinquency_flag_count": 6951,
+      "next_6m_delinquency_flag_rate": 0.2006402231020678,
+      "next_6m_delinquency_flag_count": 9596,
+      "next_12m_default_flag_rate": 0.124231869269335,
+      "next_12m_default_flag_count": 7905,
+      "next_12m_prepayment_flag_rate": 0.14941167161302646,
+      "next_12m_prepayment_flag_count": 6899,
+      "avg_next_3m_delinquency_flag_prob": 0.14379177900259454,
+      "avg_next_6m_delinquency_flag_prob": 0.2006402231020678,
+      "avg_next_12m_default_flag_prob": 0.124231869269335,
+      "avg_next_12m_prepayment_flag_prob": 0.14941167161302646
+    },
+    "segment_projections": {
+      "credit_score_band": {
+        "620-659": {
+          "next_3m_delinquency_flag_rate": 0.16774528336711964,
+          "next_3m_delinquency_flag_count": 1736,
+          "next_6m_delinquency_flag_rate": 0.23252530006606353,
+          "next_6m_delinquency_flag_count": 2307,
+          "next_12m_default_flag_rate": 0.15127894853343776,
+          "next_12m_default_flag_count": 2005,
+          "next_12m_prepayment_flag_rate": 0.10293826113114521,
+          "next_12m_prepayment_flag_count": 389
+        },
+        "660-699": {
+          "next_3m_delinquency_flag_rate": 0.13593983930480552,
+          "next_3m_delinquency_flag_count": 999,
+          "next_6m_delinquency_flag_rate": 0.1892501153620311,
+          "next_6m_delinquency_flag_count": 1291,
+          "next_12m_default_flag_rate": 0.10194568336525943,
+          "next_12m_default_flag_count": 925,
+          "next_12m_prepayment_flag_rate": 0.16097832791268843,
+          "next_12m_prepayment_flag_count": 963
+        },
+        "700-739": {
+          "next_3m_delinquency_flag_rate": 0.11924488252187873,
+          "next_3m_delinquency_flag_count": 866,
+          "next_6m_delinquency_flag_rate": 0.16707147602344677,
+          "next_6m_delinquency_flag_count": 1102,
+          "next_12m_default_flag_rate": 0.08104699960562162,
+          "next_12m_default_flag_count": 632,
+          "next_12m_prepayment_flag_rate": 0.20106968063232242,
+          "next_12m_prepayment_flag_count": 1613
+        },
+        "740-779": {
+          "next_3m_delinquency_flag_rate": 0.10612160804016248,
+          "next_3m_delinquency_flag_count": 759,
+          "next_6m_delinquency_flag_rate": 0.1454988166570716,
+          "next_6m_delinquency_flag_count": 903,
+          "next_12m_default_flag_rate": 0.06592560074716794,
+          "next_12m_default_flag_count": 531,
+          "next_12m_prepayment_flag_rate": 0.1887168094200475,
+          "next_12m_prepayment_flag_count": 1698
+        },
+        "780+": {
+          "next_3m_delinquency_flag_rate": 0.10679930115467506,
+          "next_3m_delinquency_flag_count": 478,
+          "next_6m_delinquency_flag_rate": 0.13106012478390616,
+          "next_6m_delinquency_flag_count": 623,
+          "next_12m_default_flag_rate": 0.057343751284061426,
+          "next_12m_default_flag_count": 364,
+          "next_12m_prepayment_flag_rate": 0.23352614663480586,
+          "next_12m_prepayment_flag_count": 1767
+        },
+        "<620": {
+          "next_3m_delinquency_flag_rate": 0.18416844309911393,
+          "next_3m_delinquency_flag_count": 2113,
+          "next_6m_delinquency_flag_rate": 0.26722025821419504,
+          "next_6m_delinquency_flag_count": 3370,
+          "next_12m_default_flag_rate": 0.20881382751988825,
+          "next_12m_default_flag_count": 3448,
+          "next_12m_prepayment_flag_rate": 0.08729592297953691,
+          "next_12m_prepayment_flag_count": 469
+        }
+      },
+      "ltv_band": {
+        "60-70%": {
+          "next_3m_delinquency_flag_rate": 0.1283307491496926,
+          "next_3m_delinquency_flag_count": 965,
+          "next_6m_delinquency_flag_rate": 0.16572482082966483,
+          "next_6m_delinquency_flag_count": 1200,
+          "next_12m_default_flag_rate": 0.0777851405694418,
+          "next_12m_default_flag_count": 770,
+          "next_12m_prepayment_flag_rate": 0.19434167560111598,
+          "next_12m_prepayment_flag_count": 1679
+        },
+        "70-80%": {
+          "next_3m_delinquency_flag_rate": 0.1305857592530656,
+          "next_3m_delinquency_flag_count": 1229,
+          "next_6m_delinquency_flag_rate": 0.17070567487425017,
+          "next_6m_delinquency_flag_count": 1555,
+          "next_12m_default_flag_rate": 0.09426302198156901,
+          "next_12m_default_flag_count": 1197,
+          "next_12m_prepayment_flag_rate": 0.16487116768979895,
+          "next_12m_prepayment_flag_count": 1837
+        },
+        "80-90%": {
+          "next_3m_delinquency_flag_rate": 0.15440459252356073,
+          "next_3m_delinquency_flag_count": 1546,
+          "next_6m_delinquency_flag_rate": 0.23076975831818605,
+          "next_6m_delinquency_flag_count": 2123,
+          "next_12m_default_flag_rate": 0.136586992789569,
+          "next_12m_default_flag_count": 1669,
+          "next_12m_prepayment_flag_rate": 0.13855059859555027,
+          "next_12m_prepayment_flag_count": 966
+        },
+        "90-100%": {
+          "next_3m_delinquency_flag_rate": 0.16148723327128392,
+          "next_3m_delinquency_flag_count": 1526,
+          "next_6m_delinquency_flag_rate": 0.23169228825536042,
+          "next_6m_delinquency_flag_count": 2256,
+          "next_12m_default_flag_rate": 0.16854254195806503,
+          "next_12m_default_flag_count": 2070,
+          "next_12m_prepayment_flag_rate": 0.11026980983039562,
+          "next_12m_prepayment_flag_count": 551
+        },
+        "<60%": {
+          "next_3m_delinquency_flag_rate": 0.10947937371622721,
+          "next_3m_delinquency_flag_count": 800,
+          "next_6m_delinquency_flag_rate": 0.13693930077084351,
+          "next_6m_delinquency_flag_count": 978,
+          "next_12m_default_flag_rate": 0.0521586114936634,
+          "next_12m_default_flag_count": 498,
+          "next_12m_prepayment_flag_rate": 0.1878751319493406,
+          "next_12m_prepayment_flag_count": 1706
+        },
+        ">100%": {
+          "next_3m_delinquency_flag_rate": 0.1943630690171229,
+          "next_3m_delinquency_flag_count": 885,
+          "next_6m_delinquency_flag_rate": 0.29802586499544753,
+          "next_6m_delinquency_flag_count": 1484,
+          "next_12m_default_flag_rate": 0.2653261324150817,
+          "next_12m_default_flag_count": 1701,
+          "next_12m_prepayment_flag_rate": 0.08425349811611908,
+          "next_12m_prepayment_flag_count": 160
+        }
+      },
+      "dti_band": {
+        "20-30%": {
+          "next_3m_delinquency_flag_rate": 0.1292234340059406,
+          "next_3m_delinquency_flag_count": 1247,
+          "next_6m_delinquency_flag_rate": 0.17345176940481935,
+          "next_6m_delinquency_flag_count": 1654,
+          "next_12m_default_flag_rate": 0.09517242189918902,
+          "next_12m_default_flag_count": 1233,
+          "next_12m_prepayment_flag_rate": 0.18418193670157748,
+          "next_12m_prepayment_flag_count": 1872
+        },
+        "30-36%": {
+          "next_3m_delinquency_flag_rate": 0.1446779673040605,
+          "next_3m_delinquency_flag_count": 1313,
+          "next_6m_delinquency_flag_rate": 0.2042831787719617,
+          "next_6m_delinquency_flag_count": 1891,
+          "next_12m_default_flag_rate": 0.13170761645077783,
+          "next_12m_default_flag_count": 1592,
+          "next_12m_prepayment_flag_rate": 0.18194597456440387,
+          "next_12m_prepayment_flag_count": 1739
+        },
+        "36-43%": {
+          "next_3m_delinquency_flag_rate": 0.15305360227410209,
+          "next_3m_delinquency_flag_count": 1408,
+          "next_6m_delinquency_flag_rate": 0.21915384513447356,
+          "next_6m_delinquency_flag_count": 1918,
+          "next_12m_default_flag_rate": 0.1278929313074587,
+          "next_12m_default_flag_count": 1551,
+          "next_12m_prepayment_flag_rate": 0.14138151029668816,
+          "next_12m_prepayment_flag_count": 1096
+        },
+        "43-50%": {
+          "next_3m_delinquency_flag_rate": 0.1566098158721676,
+          "next_3m_delinquency_flag_count": 1306,
+          "next_6m_delinquency_flag_rate": 0.22649589284223864,
+          "next_6m_delinquency_flag_count": 1804,
+          "next_12m_default_flag_rate": 0.15096110153242334,
+          "next_12m_default_flag_count": 1572,
+          "next_12m_prepayment_flag_rate": 0.09461529335462347,
+          "next_12m_prepayment_flag_count": 534
+        },
+        "<20%": {
+          "next_3m_delinquency_flag_rate": 0.10995829359292358,
+          "next_3m_delinquency_flag_count": 776,
+          "next_6m_delinquency_flag_rate": 0.13504213855226477,
+          "next_6m_delinquency_flag_count": 990,
+          "next_12m_default_flag_rate": 0.06910402033814293,
+          "next_12m_default_flag_count": 700,
+          "next_12m_prepayment_flag_rate": 0.1788870859698058,
+          "next_12m_prepayment_flag_count": 1366
+        },
+        ">50%": {
+          "next_3m_delinquency_flag_rate": 0.18393239880043658,
+          "next_3m_delinquency_flag_count": 901,
+          "next_6m_delinquency_flag_rate": 0.26959602027760077,
+          "next_6m_delinquency_flag_count": 1339,
+          "next_12m_default_flag_rate": 0.20134885752609585,
+          "next_12m_default_flag_count": 1257,
+          "next_12m_prepayment_flag_rate": 0.07939340513813628,
+          "next_12m_prepayment_flag_count": 292
+        }
+      },
+      "state": {
+        "AZ": {
+          "next_3m_delinquency_flag_rate": 0.14309828795807997,
+          "next_3m_delinquency_flag_count": 332,
+          "next_6m_delinquency_flag_rate": 0.1982906217710153,
+          "next_6m_delinquency_flag_count": 451,
+          "next_12m_default_flag_rate": 0.11310264763024488,
+          "next_12m_default_flag_count": 375,
+          "next_12m_prepayment_flag_rate": 0.16432631263810862,
+          "next_12m_prepayment_flag_count": 446
+        },
+        "CA": {
+          "next_3m_delinquency_flag_rate": 0.14452978508942216,
+          "next_3m_delinquency_flag_count": 367,
+          "next_6m_delinquency_flag_rate": 0.19312025024500284,
+          "next_6m_delinquency_flag_count": 494,
+          "next_12m_default_flag_rate": 0.10604899796828879,
+          "next_12m_default_flag_count": 322,
+          "next_12m_prepayment_flag_rate": 0.15933998567876964,
+          "next_12m_prepayment_flag_count": 413
+        },
+        "FL": {
+          "next_3m_delinquency_flag_rate": 0.14909885935582504,
+          "next_3m_delinquency_flag_count": 344,
+          "next_6m_delinquency_flag_rate": 0.21183678770701136,
+          "next_6m_delinquency_flag_count": 503,
+          "next_12m_default_flag_rate": 0.12176601333326119,
+          "next_12m_default_flag_count": 384,
+          "next_12m_prepayment_flag_rate": 0.17209307686810577,
+          "next_12m_prepayment_flag_count": 415
+        },
+        "GA": {
+          "next_3m_delinquency_flag_rate": 0.15283418957053335,
+          "next_3m_delinquency_flag_count": 382,
+          "next_6m_delinquency_flag_rate": 0.21750664997568672,
+          "next_6m_delinquency_flag_count": 484,
+          "next_12m_default_flag_rate": 0.13394399636709528,
+          "next_12m_default_flag_count": 411,
+          "next_12m_prepayment_flag_rate": 0.16151195720162823,
+          "next_12m_prepayment_flag_count": 294
+        },
+        "IL": {
+          "next_3m_delinquency_flag_rate": 0.14515551176449232,
+          "next_3m_delinquency_flag_count": 369,
+          "next_6m_delinquency_flag_rate": 0.21103236095197794,
+          "next_6m_delinquency_flag_count": 483,
+          "next_12m_default_flag_rate": 0.13164658808712248,
+          "next_12m_default_flag_count": 409,
+          "next_12m_prepayment_flag_rate": 0.1633293824005625,
+          "next_12m_prepayment_flag_count": 308
+        },
+        "IN": {
+          "next_3m_delinquency_flag_rate": 0.13847122886212618,
+          "next_3m_delinquency_flag_count": 327,
+          "next_6m_delinquency_flag_rate": 0.18493348805001114,
+          "next_6m_delinquency_flag_count": 420,
+          "next_12m_default_flag_rate": 0.11856697010752525,
+          "next_12m_default_flag_count": 355,
+          "next_12m_prepayment_flag_rate": 0.15255285472425664,
+          "next_12m_prepayment_flag_count": 320
+        },
+        "MA": {
+          "next_3m_delinquency_flag_rate": 0.14294422229955542,
+          "next_3m_delinquency_flag_count": 366,
+          "next_6m_delinquency_flag_rate": 0.19698007837785705,
+          "next_6m_delinquency_flag_count": 500,
+          "next_12m_default_flag_rate": 0.10867062710910184,
+          "next_12m_default_flag_count": 366,
+          "next_12m_prepayment_flag_rate": 0.17193789070007226,
+          "next_12m_prepayment_flag_count": 560
+        },
+        "MD": {
+          "next_3m_delinquency_flag_rate": 0.13601434813178123,
+          "next_3m_delinquency_flag_count": 299,
+          "next_6m_delinquency_flag_rate": 0.18869843498764372,
+          "next_6m_delinquency_flag_count": 376,
+          "next_12m_default_flag_rate": 0.1113485843897036,
+          "next_12m_default_flag_count": 302,
+          "next_12m_prepayment_flag_rate": 0.15879610378981093,
+          "next_12m_prepayment_flag_count": 345
+        },
+        "MI": {
+          "next_3m_delinquency_flag_rate": 0.13715101808976915,
+          "next_3m_delinquency_flag_count": 341,
+          "next_6m_delinquency_flag_rate": 0.18901458570128102,
+          "next_6m_delinquency_flag_count": 462,
+          "next_12m_default_flag_rate": 0.11070593211275559,
+          "next_12m_default_flag_count": 336,
+          "next_12m_prepayment_flag_rate": 0.13883526487568384,
+          "next_12m_prepayment_flag_count": 314
+        },
+        "MO": {
+          "next_3m_delinquency_flag_rate": 0.13975112961440844,
+          "next_3m_delinquency_flag_count": 275,
+          "next_6m_delinquency_flag_rate": 0.19200519808828392,
+          "next_6m_delinquency_flag_count": 374,
+          "next_12m_default_flag_rate": 0.117015403687844,
+          "next_12m_default_flag_count": 304,
+          "next_12m_prepayment_flag_rate": 0.13996470972037306,
+          "next_12m_prepayment_flag_count": 250
+        },
+        "NC": {
+          "next_3m_delinquency_flag_rate": 0.12696344942052515,
+          "next_3m_delinquency_flag_count": 306,
+          "next_6m_delinquency_flag_rate": 0.18185975306238852,
+          "next_6m_delinquency_flag_count": 401,
+          "next_12m_default_flag_rate": 0.1191393403593897,
+          "next_12m_default_flag_count": 362,
+          "next_12m_prepayment_flag_rate": 0.09426084689210423,
+          "next_12m_prepayment_flag_count": 169
+        },
+        "NJ": {
+          "next_3m_delinquency_flag_rate": 0.14124785279532595,
+          "next_3m_delinquency_flag_count": 338,
+          "next_6m_delinquency_flag_rate": 0.19298558622344414,
+          "next_6m_delinquency_flag_count": 488,
+          "next_12m_default_flag_rate": 0.1302709036590324,
+          "next_12m_default_flag_count": 473,
+          "next_12m_prepayment_flag_rate": 0.1559726325406037,
+          "next_12m_prepayment_flag_count": 363
+        },
+        "NY": {
+          "next_3m_delinquency_flag_rate": 0.14152944450518404,
+          "next_3m_delinquency_flag_count": 352,
+          "next_6m_delinquency_flag_rate": 0.1948005825072524,
+          "next_6m_delinquency_flag_count": 480,
+          "next_12m_default_flag_rate": 0.1150118113654974,
+          "next_12m_default_flag_count": 356,
+          "next_12m_prepayment_flag_rate": 0.1238691857422505,
+          "next_12m_prepayment_flag_count": 197
+        },
+        "OH": {
+          "next_3m_delinquency_flag_rate": 0.146603667539249,
+          "next_3m_delinquency_flag_count": 375,
+          "next_6m_delinquency_flag_rate": 0.2105836164576246,
+          "next_6m_delinquency_flag_count": 541,
+          "next_12m_default_flag_rate": 0.13114464763736877,
+          "next_12m_default_flag_count": 468,
+          "next_12m_prepayment_flag_rate": 0.13688271152082898,
+          "next_12m_prepayment_flag_count": 408
+        },
+        "PA": {
+          "next_3m_delinquency_flag_rate": 0.14484001596414395,
+          "next_3m_delinquency_flag_count": 364,
+          "next_6m_delinquency_flag_rate": 0.20606540682335608,
+          "next_6m_delinquency_flag_count": 527,
+          "next_12m_default_flag_rate": 0.12317505099140857,
+          "next_12m_default_flag_count": 418,
+          "next_12m_prepayment_flag_rate": 0.1671223313638799,
+          "next_12m_prepayment_flag_count": 389
+        },
+        "TN": {
+          "next_3m_delinquency_flag_rate": 0.15541224536205192,
+          "next_3m_delinquency_flag_count": 328,
+          "next_6m_delinquency_flag_rate": 0.223220063685197,
+          "next_6m_delinquency_flag_count": 543,
+          "next_12m_default_flag_rate": 0.1448838448092968,
+          "next_12m_default_flag_count": 442,
+          "next_12m_prepayment_flag_rate": 0.1759755213643157,
+          "next_12m_prepayment_flag_count": 465
+        },
+        "TX": {
+          "next_3m_delinquency_flag_rate": 0.14573020521659202,
+          "next_3m_delinquency_flag_count": 384,
+          "next_6m_delinquency_flag_rate": 0.20426380025409574,
+          "next_6m_delinquency_flag_count": 506,
+          "next_12m_default_flag_rate": 0.1303320728459379,
+          "next_12m_default_flag_count": 413,
+          "next_12m_prepayment_flag_rate": 0.13054924189768505,
+          "next_12m_prepayment_flag_count": 310
+        },
+        "VA": {
+          "next_3m_delinquency_flag_rate": 0.14925361303186319,
+          "next_3m_delinquency_flag_count": 371,
+          "next_6m_delinquency_flag_rate": 0.20465939836560834,
+          "next_6m_delinquency_flag_count": 505,
+          "next_12m_default_flag_rate": 0.14475583893547972,
+          "next_12m_default_flag_count": 501,
+          "next_12m_prepayment_flag_rate": 0.12993724201745888,
+          "next_12m_prepayment_flag_count": 222
+        },
+        "WA": {
+          "next_3m_delinquency_flag_rate": 0.14461281440896173,
+          "next_3m_delinquency_flag_count": 390,
+          "next_6m_delinquency_flag_rate": 0.19534341414904324,
+          "next_6m_delinquency_flag_count": 497,
+          "next_12m_default_flag_rate": 0.11516397225662837,
+          "next_12m_default_flag_count": 380,
+          "next_12m_prepayment_flag_rate": 0.148111355001396,
+          "next_12m_prepayment_flag_count": 374
+        },
+        "WI": {
+          "next_3m_delinquency_flag_rate": 0.15301676509671247,
+          "next_3m_delinquency_flag_count": 341,
+          "next_6m_delinquency_flag_rate": 0.22092363080689756,
+          "next_6m_delinquency_flag_count": 561,
+          "next_12m_default_flag_rate": 0.16180453168631173,
+          "next_12m_default_flag_count": 528,
+          "next_12m_prepayment_flag_rate": 0.15168837355747974,
+          "next_12m_prepayment_flag_count": 337
+        }
+      },
+      "loan_purpose": {
+        "Cash-out Refinance": {
+          "next_3m_delinquency_flag_rate": 0.1438955716615781,
+          "next_3m_delinquency_flag_count": 1396,
+          "next_6m_delinquency_flag_rate": 0.19913400765942607,
+          "next_6m_delinquency_flag_count": 1891,
+          "next_12m_default_flag_rate": 0.1276601863911094,
+          "next_12m_default_flag_count": 1616,
+          "next_12m_prepayment_flag_rate": 0.16621477744366514,
+          "next_12m_prepayment_flag_count": 1782
+        },
+        "Purchase": {
+          "next_3m_delinquency_flag_rate": 0.14361081773515078,
+          "next_3m_delinquency_flag_count": 3358,
+          "next_6m_delinquency_flag_rate": 0.20230442152893,
+          "next_6m_delinquency_flag_count": 4815,
+          "next_12m_default_flag_rate": 0.12053272867710445,
+          "next_12m_default_flag_count": 3844,
+          "next_12m_prepayment_flag_rate": 0.1371910163700955,
+          "next_12m_prepayment_flag_count": 2986
+        },
+        "Refinance": {
+          "next_3m_delinquency_flag_rate": 0.1440215931008782,
+          "next_3m_delinquency_flag_count": 2197,
+          "next_6m_delinquency_flag_rate": 0.19889465247003846,
+          "next_6m_delinquency_flag_count": 2890,
+          "next_12m_default_flag_rate": 0.12805830864776296,
+          "next_12m_default_flag_count": 2445,
+          "next_12m_prepayment_flag_rate": 0.1584004047164362,
+          "next_12m_prepayment_flag_count": 2131
+        }
+      },
+      "servicer_name": {
+        "Servicer_A": {
+          "next_3m_delinquency_flag_rate": 0.14299655363025315,
+          "next_3m_delinquency_flag_count": 1429,
+          "next_6m_delinquency_flag_rate": 0.20266376812140896,
+          "next_6m_delinquency_flag_count": 1955,
+          "next_12m_default_flag_rate": 0.13332987936606314,
+          "next_12m_default_flag_count": 1708,
+          "next_12m_prepayment_flag_rate": 0.14259053580415298,
+          "next_12m_prepayment_flag_count": 1165
+        },
+        "Servicer_B": {
+          "next_3m_delinquency_flag_rate": 0.13676788328477518,
+          "next_3m_delinquency_flag_count": 1331,
+          "next_6m_delinquency_flag_rate": 0.1868068345011689,
+          "next_6m_delinquency_flag_count": 1779,
+          "next_12m_default_flag_rate": 0.11707787360423738,
+          "next_12m_default_flag_count": 1470,
+          "next_12m_prepayment_flag_rate": 0.14583052920088793,
+          "next_12m_prepayment_flag_count": 1309
+        },
+        "Servicer_C": {
+          "next_3m_delinquency_flag_rate": 0.14439763443454456,
+          "next_3m_delinquency_flag_count": 1258,
+          "next_6m_delinquency_flag_rate": 0.19957403834600163,
+          "next_6m_delinquency_flag_count": 1718,
+          "next_12m_default_flag_rate": 0.1210826541045423,
+          "next_12m_default_flag_count": 1408,
+          "next_12m_prepayment_flag_rate": 0.1657669319959198,
+          "next_12m_prepayment_flag_count": 1513
+        },
+        "Servicer_D": {
+          "next_3m_delinquency_flag_rate": 0.14501029039578928,
+          "next_3m_delinquency_flag_count": 1468,
+          "next_6m_delinquency_flag_rate": 0.20438006865792338,
+          "next_6m_delinquency_flag_count": 2143,
+          "next_12m_default_flag_rate": 0.12105060736189072,
+          "next_12m_default_flag_count": 1684,
+          "next_12m_prepayment_flag_rate": 0.1332973222778014,
+          "next_12m_prepayment_flag_count": 1142
+        },
+        "Servicer_E": {
+          "next_3m_delinquency_flag_rate": 0.14967975566538594,
+          "next_3m_delinquency_flag_count": 1465,
+          "next_6m_delinquency_flag_rate": 0.20909513154726964,
+          "next_6m_delinquency_flag_count": 2001,
+          "next_12m_default_flag_rate": 0.12808188560482578,
+          "next_12m_default_flag_count": 1635,
+          "next_12m_prepayment_flag_rate": 0.16244762967469326,
+          "next_12m_prepayment_flag_count": 1770
+        }
+      }
+    },
+    "driver_explanations": {
+      "current_balance": {
+        "base_mean": 334827.7978141191,
+        "scenario_mean": 330585.08455149195,
+        "pct_change": -1.2671329233490023
+      },
+      "interest_rate": {
+        "base_mean": 0.05615987822742939,
+        "scenario_mean": 0.05549340433190913,
+        "pct_change": -1.1867438401865094
+      },
+      "days_past_due": {
+        "base_mean": 13.65013636733697,
+        "scenario_mean": 13.478405482535472,
+        "pct_change": -1.2580891514932266
+      },
+      "servicer_current_balance": {
+        "base_mean": 310700.0750540375,
+        "scenario_mean": 93210.64693856555,
+        "pct_change": -69.9997990272921
+      },
+      "servicer_days_past_due": {
+        "base_mean": 9.446558365432926,
+        "scenario_mean": 2.8339864946340287,
+        "pct_change": -69.99979902729208
+      },
+      "predictions": {
+        "next_3m_delinquency_flag": {
+          "base_rate": 0.14379597250693354,
+          "scenario_rate": 0.14379177900259454,
+          "absolute_change": -4.1935043390006754e-06,
+          "relative_change": -0.002916287755415732
+        },
+        "next_6m_delinquency_flag": {
+          "base_rate": 0.20356525583825716,
+          "scenario_rate": 0.2006402231020678,
+          "absolute_change": -0.0029250327361893536,
+          "relative_change": -1.4369017562178878
+        },
+        "next_12m_default_flag": {
+          "base_rate": 0.12727601591703847,
+          "scenario_rate": 0.124231869269335,
+          "absolute_change": -0.0030441466477034718,
+          "relative_change": -2.3917677071913683
+        },
+        "next_12m_prepayment_flag": {
+          "base_rate": 0.14784557257124484,
+          "scenario_rate": 0.14941167161302646,
+          "absolute_change": 0.0015660990417816212,
+          "relative_change": 1.0592803115743887
+        }
+      }
+    },
+    "feature_shifts": {
+      "loan_age_months": 0.0,
+      "remaining_term_months": 0.0,
+      "original_balance": 0.0,
+      "current_balance": -1.2671329233490023,
+      "interest_rate": -1.1867438401865094,
+      "days_past_due": -1.2580891514932266,
+      "modification_flag": 0.0,
+      "prepayment_flag": 0.0,
+      "default_flag": 0.0,
+      "servicer_current_balance": -69.9997990272921,
+      "servicer_days_past_due": -69.99979902729208,
+      "data_quality_flag": 0.0
+    }
+  }
+}

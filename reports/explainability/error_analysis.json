@@ -1,0 +1,2430 @@
+{
+  "next_3m_delinquency_flag": {
+    "false_positives": [
+      {
+        "loan_index": 2309,
+        "base_value": -0.6051678796748463,
+        "prediction": 2.496172580996223,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 2.0550131549372685,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.6359736594092901,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.5341968734187029,
+            "feature_value": 54.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.24953295091918656,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.1521324552582521,
+            "feature_value": 0.0607
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": -0.10207198144561579,
+            "feature_value": 153754.63
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": -0.0607109288074287,
+            "feature_value": 154507.8
+          },
+          {
+            "feature": "log_dpd",
+            "shap_value": 0.05508325266983487,
+            "feature_value": 4.007333185232471
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.05266733102045139,
+            "feature_value": 0.9847442283266505
+          },
+          {
+            "feature": "dpd_30_plus",
+            "shap_value": 0.051526310802295736,
+            "feature_value": 1.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7301962738961336
+      },
+      {
+        "loan_index": 10852,
+        "base_value": -0.6051678796748463,
+        "prediction": 2.2796208630108277,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 2.008006558713848,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.6094012618422455,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.33698451474214747,
+            "feature_value": 0.06110946913234372
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.3255112732804874,
+            "feature_value": 47.0
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": 0.12121838660162955,
+            "feature_value": -4963.619999999995
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.10454037872491029,
+            "feature_value": 0.0671
+          },
+          {
+            "feature": "servicer_current_balance",
+            "shap_value": 0.08954644742512018,
+            "feature_value": 439018.64
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.06239849369184812,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_ratio_lag2",
+            "shap_value": -0.051148618985069914,
+            "feature_value": 0.9459870656746359
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.04724290103714281,
+            "feature_value": 0.9803072971579986
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.6151814321780368
+      },
+      {
+        "loan_index": 529,
+        "base_value": -0.6051678796748463,
+        "prediction": 2.6240986938718,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.9206313037141638,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.587021332667255,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.546211735842561,
+            "feature_value": 58.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.11179904604501491,
+            "feature_value": 0.0632
+          },
+          {
+            "feature": "loan_age_months",
+            "shap_value": -0.06564203767141347,
+            "feature_value": 17.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.058269525300412864,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": -0.05473098881676006,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.05028292912059291,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": 0.04864503049342372,
+            "feature_value": 0.016617040040731723
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": 0.03827296819199086,
+            "feature_value": -1337.9700000000303
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7397885222794942
+      },
+      {
+        "loan_index": 16976,
+        "base_value": -0.6051678796748463,
+        "prediction": 1.6605937169149352,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.665074999658042,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.4898084998638397,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": -0.26624444293522065,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.23043640996611936,
+            "feature_value": 158.0
+          },
+          {
+            "feature": "is_delinquent_rollmean_3",
+            "shap_value": -0.13249954508290374,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.1243604941818189,
+            "feature_value": 0.0683
+          },
+          {
+            "feature": "days_past_due_rollmean_12",
+            "shap_value": -0.06964014365414992,
+            "feature_value": 13.583333333333334
+          },
+          {
+            "feature": "is_delinquent_rollmean_12",
+            "shap_value": -0.06697797678637409,
+            "feature_value": 0.25
+          },
+          {
+            "feature": "balance_ratio_lag3",
+            "shap_value": 0.06394521621040501,
+            "feature_value": 0.9867794851645618
+          },
+          {
+            "feature": "balance_ratio",
+            "shap_value": 0.05609929660667922,
+            "feature_value": 0.9839974951960562
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.5079051383399209
+      },
+      {
+        "loan_index": 13490,
+        "base_value": -0.6051678796748463,
+        "prediction": 2.917354926804806,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.8625079445558332,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.5841339966421152,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.5383158780155842,
+            "feature_value": 70.0
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": 0.0870175963780972,
+            "feature_value": 0.041545516466448884
+          },
+          {
+            "feature": "log_dpd",
+            "shap_value": 0.07306813411747538,
+            "feature_value": 4.2626798770413155
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.0702069800012094,
+            "feature_value": 0.9881000785252864
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.06988694721051335,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "is_severe_dq",
+            "shap_value": 0.06159062194666771,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.05515430513140287,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.05195831270731779,
+            "feature_value": 579.4354675887887
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7976665758277695
+      }
+    ],
+    "false_negatives": [
+      {
+        "loan_index": 17096,
+        "base_value": -0.6051678796748463,
+        "prediction": -0.44827965994064123,
+        "contributions": [
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.20635416003972415,
+            "feature_value": 0.0572
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.17322163524823153,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.15760799171073328,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due_rollstd_12",
+            "shap_value": 0.12928194999365358,
+            "feature_value": 17.47964183808921
+          },
+          {
+            "feature": "loan_age_months",
+            "shap_value": -0.11528241314181455,
+            "feature_value": 18.0
+          },
+          {
+            "feature": "days_past_due_rollmax_12",
+            "shap_value": -0.1109361733653322,
+            "feature_value": 50.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.08027344290111521,
+            "feature_value": 288457.94
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.07832654823401003,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "servicer_name_Servicer_E",
+            "shap_value": 0.06164787586413199,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": -0.055027819430167636,
+            "feature_value": 0.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.14622244568080942
+      },
+      {
+        "loan_index": 6523,
+        "base_value": -0.6051678796748463,
+        "prediction": -0.37736016800030553,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.18270645634484364,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.14867910089900266,
+            "feature_value": 0.0465
+          },
+          {
+            "feature": "servicer_current_balance",
+            "shap_value": -0.14003389002971395,
+            "feature_value": 714268.04
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.13569651707109068,
+            "feature_value": 989.9456174132607
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.12845873812514116,
+            "feature_value": 714268.04
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.11607299004027215,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_lag1",
+            "shap_value": 0.09614253840018372,
+            "feature_value": 715263.74
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.08475973346295726,
+            "feature_value": 0.9935456600819509
+          },
+          {
+            "feature": "current_balance_rollmax_6",
+            "shap_value": -0.06977090344737694,
+            "feature_value": 720184.87
+          },
+          {
+            "feature": "loan_purpose_Cash-out Refinance",
+            "shap_value": 0.06892079903390064,
+            "feature_value": 1.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.11480518461205834
+      },
+      {
+        "loan_index": 9179,
+        "base_value": -0.6051678796748463,
+        "prediction": -1.5574830855811275,
+        "contributions": [
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.2801707858683685,
+            "feature_value": 0.0455
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.20245507614329705,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.12457676848448546,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.10744238458943915,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.0973367237226892,
+            "feature_value": 0.9867269059989198
+          },
+          {
+            "feature": "state_OH",
+            "shap_value": 0.0784209222818944,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": -0.07508471202362978,
+            "feature_value": 204864.71666666665
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": -0.06602711508159208,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "property_type_SFR",
+            "shap_value": 0.06292055209002914,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "loan_age_months",
+            "shap_value": -0.05880050029000274,
+            "feature_value": 22.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.04883864421516073
+      },
+      {
+        "loan_index": 17131,
+        "base_value": -0.6051678796748463,
+        "prediction": -0.9277213129020299,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.18068556340651895,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "property_type_SFR",
+            "shap_value": -0.11625331005648332,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_lag1",
+            "shap_value": 0.10481563735746378,
+            "feature_value": 823236.73
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.08831003462505943,
+            "feature_value": 0.0566
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.08449925285367627,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollstd_12",
+            "shap_value": 0.08347571055720313,
+            "feature_value": 3361.250929268078
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": -0.07748120495500396,
+            "feature_value": 0.004011135026215971
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.07482052495554208,
+            "feature_value": 822277.87
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": 0.06522712513948162,
+            "feature_value": 828404.3416666667
+          },
+          {
+            "feature": "current_balance_rollmax_12",
+            "shap_value": -0.057891829199058976,
+            "feature_value": 833491.48
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.06892673811877195
+      },
+      {
+        "loan_index": 11938,
+        "base_value": -0.6051678796748463,
+        "prediction": -0.5978336244514396,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.17494246808384636,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "days_past_due_rollmean_12",
+            "shap_value": -0.1321880640370709,
+            "feature_value": 66.83333333333333
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.10283444834548658,
+            "feature_value": 0.0565
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.0987066134091983,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due_rollmax_12",
+            "shap_value": 0.09375934272756285,
+            "feature_value": 802.0
+          },
+          {
+            "feature": "days_past_due_rollstd_12",
+            "shap_value": 0.07918689141805704,
+            "feature_value": 231.51745794503992
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": -0.06929622436750957,
+            "feature_value": 0.004040581233309723
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": -0.057627494022896505,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "loan_age_months",
+            "shap_value": -0.056421796874808874,
+            "feature_value": 18.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.04690238205326915,
+            "feature_value": 286664.56
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.11125143757077637
+      }
+    ]
+  },
+  "next_6m_delinquency_flag": {
+    "false_positives": [
+      {
+        "loan_index": 4418,
+        "base_value": -0.46720819601391766,
+        "prediction": 2.9093984678171525,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.5359410853333675,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.5090602335349308,
+            "feature_value": 89.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.4725665129623938,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.1484233504011655,
+            "feature_value": 0.0682
+          },
+          {
+            "feature": "is_severe_dq",
+            "shap_value": 0.10944726840349855,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.09643417442151112,
+            "feature_value": 441037.22
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.07834516123134515,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.06345979753679779,
+            "feature_value": 440191.9
+          },
+          {
+            "feature": "is_severe_dq_rollmean_12",
+            "shap_value": 0.06343257758816669,
+            "feature_value": 0.08333333333333333
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": 0.062037055595153684,
+            "feature_value": -1264.4099999999744
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.869989126756101
+      },
+      {
+        "loan_index": 7560,
+        "base_value": -0.46720819601391766,
+        "prediction": 2.233414260857234,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.6622226886278317,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.4431590540528631,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.3454968288818811,
+            "feature_value": 36.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.24446825831107735,
+            "feature_value": 0.0479
+          },
+          {
+            "feature": "servicer_days_past_due",
+            "shap_value": 0.17519060674040215,
+            "feature_value": 36.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.1430985746865032,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "is_delinquent_rollmean_6",
+            "shap_value": -0.09223398435437173,
+            "feature_value": 0.3333333333333333
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.07393669683712228,
+            "feature_value": 1882426.417084911
+          },
+          {
+            "feature": "is_severe_dq_rollmean_12",
+            "shap_value": 0.07241142550633589,
+            "feature_value": 0.08333333333333333
+          },
+          {
+            "feature": "current_balance_lag6",
+            "shap_value": 0.06546111318482628,
+            "feature_value": 215067.85
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7298206751054853
+      },
+      {
+        "loan_index": 2137,
+        "base_value": -0.46720819601391766,
+        "prediction": 1.4224268646787017,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.258214767784086,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.4516004846532613,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_lag3",
+            "shap_value": -0.1347634282446701,
+            "feature_value": 811515.92
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.10910401971903683,
+            "feature_value": 0.0587
+          },
+          {
+            "feature": "days_past_due_rollmax_12",
+            "shap_value": -0.09530444030495233,
+            "feature_value": 61.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.09118541740469796,
+            "feature_value": 568.0
+          },
+          {
+            "feature": "current_balance_lag6",
+            "shap_value": -0.07928980788440057,
+            "feature_value": 814256.2
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.07536558059974757,
+            "feature_value": 808735.25
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": -0.07269601460240722,
+            "feature_value": -2780.670000000042
+          },
+          {
+            "feature": "is_severe_dq_rollmean_12",
+            "shap_value": 0.0710971383044514,
+            "feature_value": 0.08333333333333333
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.6651303242212333
+      },
+      {
+        "loan_index": 7928,
+        "base_value": -0.46720819601391766,
+        "prediction": 2.104421879653007,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.5878951903549612,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.6444463490980232,
+            "feature_value": 0.06571397708059368
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.5127834308923096,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "servicer_days_past_due",
+            "shap_value": 0.261181045679108,
+            "feature_value": 57.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.2359768894797632,
+            "feature_value": 0.0785
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.2134031377612873,
+            "feature_value": 57.0
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": 0.13991821814621686,
+            "feature_value": -2117.960000000021
+          },
+          {
+            "feature": "remaining_term_months",
+            "shap_value": 0.07826046860898402,
+            "feature_value": 160.0
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.07029250543261974,
+            "feature_value": 703.6862474865903
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.06028679787766744,
+            "feature_value": 2.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.6747474747474748
+      },
+      {
+        "loan_index": 3876,
+        "base_value": -0.46720819601391766,
+        "prediction": 2.2458071040103924,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.5351152286226706,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.45069977973680353,
+            "feature_value": 5.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.36627637677018055,
+            "feature_value": 31.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.09851950234734116,
+            "feature_value": 0.0578
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.06941884401908302,
+            "feature_value": 0.9887916274586307
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.06337183383853615,
+            "feature_value": 622.325606602155
+          },
+          {
+            "feature": "days_past_due_rollmax_3",
+            "shap_value": -0.06136617447919167,
+            "feature_value": 159.0
+          },
+          {
+            "feature": "is_severe_dq_rollstd_6",
+            "shap_value": -0.055206824449262205,
+            "feature_value": 0.5477225575051662
+          },
+          {
+            "feature": "days_past_due_rollstd_12",
+            "shap_value": 0.05396673874853369,
+            "feature_value": 56.63191893644645
+          },
+          {
+            "feature": "is_severe_dq_rollstd_12",
+            "shap_value": 0.04661739353624099,
+            "feature_value": 0.45226701686664544
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7694727992919633
+      }
+    ],
+    "false_negatives": [
+      {
+        "loan_index": 4161,
+        "base_value": -0.46720819601391766,
+        "prediction": -1.136168931470605,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.20525843481795567,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.16515666759128986,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_lag6",
+            "shap_value": -0.11816749838208147,
+            "feature_value": 323498.75
+          },
+          {
+            "feature": "servicer_name_Servicer_B",
+            "shap_value": -0.11376119048482926,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.09222028743217216,
+            "feature_value": 326740.0
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": -0.07416230861139812,
+            "feature_value": 220.69547729839186
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.07355835937573739,
+            "feature_value": 322183.95
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.07071206204672467,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.06969166782143761,
+            "feature_value": 0.9933033604700986
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.06354617304101778,
+            "feature_value": 0.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.0670928841582904
+      },
+      {
+        "loan_index": 15116,
+        "base_value": -0.46720819601391766,
+        "prediction": -0.494062861646277,
+        "contributions": [
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.5661440830290421,
+            "feature_value": 0.07394438043748186
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.448699623244457,
+            "feature_value": 0.0698
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.31101080714682267,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.20076387064181242,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.1472421462981442,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.11422391493007546,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_lag6",
+            "shap_value": -0.10704275671892123,
+            "feature_value": 465310.84
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.09851907393812413,
+            "feature_value": 454939.64
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.07732001272224484,
+            "feature_value": 491266.0
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": -0.07629770470624501,
+            "feature_value": -5230.719999999972
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.0713886528799736
+      },
+      {
+        "loan_index": 9166,
+        "base_value": -0.46720819601391766,
+        "prediction": -0.49250757143842067,
+        "contributions": [
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.2759901096382377,
+            "feature_value": 0.0383
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.15290219162670884,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.13133596490046692,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "current_balance_rollstd_12",
+            "shap_value": 0.07262612314435052,
+            "feature_value": 3083.669967217006
+          },
+          {
+            "feature": "current_balance_rollmean_3",
+            "shap_value": -0.07057302757741737,
+            "feature_value": 532586.4066666666
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.06770611338814504,
+            "feature_value": 549397.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.06615811697653287,
+            "feature_value": 0.9849456950074353
+          },
+          {
+            "feature": "current_balance_lag1",
+            "shap_value": 0.0657565862937953,
+            "feature_value": 531718.36
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.06359253496421681,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.05394466465835977,
+            "feature_value": 1.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.24766799974502451
+      },
+      {
+        "loan_index": 17323,
+        "base_value": -0.46720819601391766,
+        "prediction": -0.29218322560892523,
+        "contributions": [
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.5379323871390275,
+            "feature_value": 0.059724757750519664
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.22871223977639998,
+            "feature_value": 0.0624
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.19607382157576828,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.1566780881214674,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": -0.12749937921892218,
+            "feature_value": 160594.31
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.11881945507661235,
+            "feature_value": 620.4106963404113
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.11567049073548988,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "balance_ratio_lag2",
+            "shap_value": 0.05313333469588309,
+            "feature_value": 0.9475779735940747
+          },
+          {
+            "feature": "servicer_name_Servicer_D",
+            "shap_value": 0.04674791099220039,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollmax_6",
+            "shap_value": -0.04636233347908589,
+            "feature_value": 164297.65
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.14868868920699863
+      },
+      {
+        "loan_index": 41,
+        "base_value": -0.46720819601391766,
+        "prediction": -0.015983165559345647,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.15461216623107374,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.13221710468965026,
+            "feature_value": 449188.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.1305298984939722,
+            "feature_value": 0.0628
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.12051213908236882,
+            "feature_value": 441208.8
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": 0.09774988149748087,
+            "feature_value": 1138253.7135622203
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.07742260991972195,
+            "feature_value": 442132.83
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.0730516030412486,
+            "feature_value": 19.53485449911094
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.06729837446452659,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.06559165028578463,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "balance_3m_pct_change",
+            "shap_value": 0.05436854599058661,
+            "feature_value": -0.00312353667181629
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.18324328982993787
+      }
+    ]
+  },
+  "next_12m_default_flag": {
+    "false_positives": [
+      {
+        "loan_index": 648,
+        "base_value": -1.1419277294142445,
+        "prediction": 2.3947761393069187,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.4656469186471293,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.49634809436145455,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "is_severe_dq",
+            "shap_value": 0.305797540186744,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.27991612359505963,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.2060903227624505,
+            "feature_value": 81.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.19658538855053415,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.19068790404320385,
+            "feature_value": 466231.45
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.1626589712488667,
+            "feature_value": 0.0756
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.1556301650796939,
+            "feature_value": 481677.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.10654731497861951,
+            "feature_value": 2.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7656021813416084
+      },
+      {
+        "loan_index": 4236,
+        "base_value": -1.1419277294142445,
+        "prediction": 2.6144595107678597,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.5234922369909942,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.6276232168896059,
+            "feature_value": 102.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.4822452160411171,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.34939252699203216,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.25147925255085335,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "is_severe_dq",
+            "shap_value": 0.2122685749192574,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "state_MI",
+            "shap_value": -0.19819186428192126,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.19772033239774772,
+            "feature_value": 576713.27
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.14132145925097198,
+            "feature_value": 584720.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.13377022509817296,
+            "feature_value": 0.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.8790765366009538
+      },
+      {
+        "loan_index": 3140,
+        "base_value": -1.1419277294142445,
+        "prediction": 1.3271079475145307,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.6466341640458835,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.49758960435425126,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.37580362774519827,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.2671448803108268,
+            "feature_value": 0.0607
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.20051987771365953,
+            "feature_value": 0.07175035089622916
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.19089100428429367,
+            "feature_value": 530396.28
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.1707945396739587,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.1660086176626607,
+            "feature_value": 571394.0
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.131430008275696,
+            "feature_value": 534684.7
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.11072037348886335,
+            "feature_value": 58.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.5574506268884223
+      },
+      {
+        "loan_index": 2751,
+        "base_value": -1.1419277294142445,
+        "prediction": 1.8297085743007058,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.6512492126737073,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.5713908592079843,
+            "feature_value": 3.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.4889833922158098,
+            "feature_value": 5.0
+          },
+          {
+            "feature": "is_severe_dq",
+            "shap_value": 0.3860765596239543,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.2968881699109318,
+            "feature_value": 0.0418
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.2602976262185237,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": -0.11550094773700688,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.09548154477947819,
+            "feature_value": 290834.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.0825803693519955,
+            "feature_value": 282875.06
+          },
+          {
+            "feature": "state_AZ",
+            "shap_value": -0.05267891084095981,
+            "feature_value": 1.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.5612591791782958
+      },
+      {
+        "loan_index": 17567,
+        "base_value": -1.1419277294142445,
+        "prediction": 1.2336927608974744,
+        "contributions": [
+          {
+            "feature": "is_delinquent",
+            "shap_value": 1.6715197574590348,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dq_streak",
+            "shap_value": 0.5692136325150479,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.44049775392808815,
+            "feature_value": 0.0711
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.3991493422978237,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "property_type_Manufactured",
+            "shap_value": -0.2873790294827849,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "is_severe_dq",
+            "shap_value": 0.20921792243745413,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.18491452472955955,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "days_past_due",
+            "shap_value": 0.12230733570151751,
+            "feature_value": 65.0
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.06439428120017798,
+            "feature_value": 270009.4
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": -0.052340711529587386,
+            "feature_value": 268844.56
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.5574506268884223
+      }
+    ],
+    "false_negatives": [
+      {
+        "loan_index": 1389,
+        "base_value": -1.1419277294142445,
+        "prediction": 0.9936065981741606,
+        "contributions": [
+          {
+            "feature": "original_balance",
+            "shap_value": 0.4496447297245007,
+            "feature_value": 629942.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.4073780924696081,
+            "feature_value": 619202.41
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.3551914559463919,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": 0.24866702572375568,
+            "feature_value": 622987.6116666666
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.16483428715739937,
+            "feature_value": 0.068
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.14590966824807336,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "servicer_name_Servicer_C",
+            "shap_value": -0.1313853427927269,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "days_past_due_rollmax_12",
+            "shap_value": 0.12886813619503418,
+            "feature_value": 657.0
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.12541680071524444,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.12421699812357458,
+            "feature_value": 2.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.45224105817589133
+      },
+      {
+        "loan_index": 996,
+        "base_value": -1.1419277294142445,
+        "prediction": 0.7857694633251011,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.3931325954861705,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.3133893173025569,
+            "feature_value": 0.0621
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.29930405693746265,
+            "feature_value": 431046.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.2963338053217224,
+            "feature_value": 413917.95
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.14551436107650215,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.14103242785365114,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.13485990256530192,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.11053924458163793,
+            "feature_value": 986.196094613177
+          },
+          {
+            "feature": "state_NC",
+            "shap_value": 0.11011693502618554,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "property_type_2-4 Unit",
+            "shap_value": -0.07440144728820346,
+            "feature_value": 1.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.30745904399254154
+      },
+      {
+        "loan_index": 11161,
+        "base_value": -1.1419277294142445,
+        "prediction": -0.028634082985065312,
+        "contributions": [
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.5843530910984178,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.3815891104246501,
+            "feature_value": 481046.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.35144804083744213,
+            "feature_value": 454920.88
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.21773994286232118,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.1442066156626829,
+            "feature_value": 0.0434
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.1394028781752274,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": -0.09686015542703054,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": 0.09557873146117346,
+            "feature_value": 463590.91583333333
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.08227669075706262,
+            "feature_value": 0.9787459411366065
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.07930445890059956,
+            "feature_value": 0.05430898500351322
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.24094746691700186
+      },
+      {
+        "loan_index": 8879,
+        "base_value": -1.1419277294142445,
+        "prediction": -1.0826912573114993,
+        "contributions": [
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.4180961323182856,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "state_WI",
+            "shap_value": 0.28473265208786247,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": -0.21332641401016378,
+            "feature_value": 236846.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.17594174347321132,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": -0.1661495217259383,
+            "feature_value": 233426.36
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.16221335567700607,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.14477805741605435,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "balance_3m_pct_change",
+            "shap_value": 0.10234907878808246,
+            "feature_value": -0.0021291918932965104
+          },
+          {
+            "feature": "servicer_name_Servicer_D",
+            "shap_value": 0.07511166299448492,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": -0.07256957333776419,
+            "feature_value": 234485.65166666664
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.028485499922410517
+      },
+      {
+        "loan_index": 15544,
+        "base_value": -1.1419277294142445,
+        "prediction": -0.15567072099770551,
+        "contributions": [
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.42399073802821324,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.3340263513353805,
+            "feature_value": 0.0432
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.3336390750040137,
+            "feature_value": 507364.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.2520778307120716,
+            "feature_value": 492323.55
+          },
+          {
+            "feature": "is_delinquent",
+            "shap_value": -0.14125162514810363,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "property_type_2-4 Unit",
+            "shap_value": 0.11739155825040438,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollmean_12",
+            "shap_value": 0.11032810087378858,
+            "feature_value": 737226.2301410404
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": -0.10411241494295323,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.10407507174390268,
+            "feature_value": 6.665897623190618
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.07396285816644221,
+            "feature_value": 2.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.18415445182607473
+      }
+    ]
+  },
+  "next_12m_prepayment_flag": {
+    "false_positives": [
+      {
+        "loan_index": 354,
+        "base_value": -0.7046908443381034,
+        "prediction": 0.9735554033467685,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.4074582409682639,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.24136099054844587,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.18970543296851541,
+            "feature_value": 0.0545
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.16082174799829907,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.139748127685503,
+            "feature_value": 256034.0
+          },
+          {
+            "feature": "state_MD",
+            "shap_value": -0.1170640583710603,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "servicer_name_Servicer_A",
+            "shap_value": -0.08596998283510084,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.08198192898370533,
+            "feature_value": 0.9887301295921636
+          },
+          {
+            "feature": "loan_purpose_Purchase",
+            "shap_value": 0.07699497733750944,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.05273139066792376,
+            "feature_value": 249508.74
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.6264623970350375
+      },
+      {
+        "loan_index": 6064,
+        "base_value": -0.7046908443381034,
+        "prediction": 1.6323077039571312,
+        "contributions": [
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.7203406781794964,
+            "feature_value": 0.0297
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": 0.2522941346728311,
+            "feature_value": 3.528222831459999
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.19758628772083559,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "current_balance_rollstd_12",
+            "shap_value": 0.19542924256862187,
+            "feature_value": 817909.0885662255
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.18256266203262617,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollmax_12",
+            "shap_value": 0.17838818469267334,
+            "feature_value": 3059857.946591012
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.13030665616030424,
+            "feature_value": 231819.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.11414777820396277,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_rollstd_6",
+            "shap_value": -0.10596616191275977,
+            "feature_value": 1157201.7902397518
+          },
+          {
+            "feature": "months_since_dq",
+            "shap_value": 0.10494747857926531,
+            "feature_value": 19.0
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.5618824005451913
+      },
+      {
+        "loan_index": 16760,
+        "base_value": -0.7046908443381034,
+        "prediction": 1.1226370549141564,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.48563643911739035,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.31518782138398027,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.19561495330736225,
+            "feature_value": 169205.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.1614499739630311,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.10974793836198433,
+            "feature_value": 0.0547
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.07633293015052887,
+            "feature_value": 0.989918323926598
+          },
+          {
+            "feature": "state_OH",
+            "shap_value": -0.07184877038193624,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.06665102859524787,
+            "feature_value": 165113.18
+          },
+          {
+            "feature": "months_since_dq",
+            "shap_value": 0.03994726507855952,
+            "feature_value": 20.0
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.03931134266161803,
+            "feature_value": 165519.94
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.6464797614952413
+      },
+      {
+        "loan_index": 10405,
+        "base_value": -0.7046908443381034,
+        "prediction": 0.945456940949089,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.5541169007119571,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.22900002184753337,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.20064537078182568,
+            "feature_value": 0.0409
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.1742806326437544,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.07247449930460974,
+            "feature_value": 0.9885291649726214
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.06531479901755917,
+            "feature_value": 231202.0
+          },
+          {
+            "feature": "servicer_name_Servicer_C",
+            "shap_value": -0.055715573414538186,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "property_type_SFR",
+            "shap_value": 0.050801678071300725,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": 0.048543999611111215,
+            "feature_value": 224433.81
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.04630684723268922,
+            "feature_value": 225131.57
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.7022417153996101
+      },
+      {
+        "loan_index": 1272,
+        "base_value": -0.7046908443381034,
+        "prediction": 1.1493387181658772,
+        "contributions": [
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.4986766705676299,
+            "feature_value": 0.0324
+          },
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.2951843335440546,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": 0.2745864195656371,
+            "feature_value": 4.642275426833841
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.2613105337734761,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollstd_12",
+            "shap_value": 0.1501506254213659,
+            "feature_value": 1075624.5009482545
+          },
+          {
+            "feature": "months_since_dq",
+            "shap_value": 0.1457605314609989,
+            "feature_value": 19.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.14431650646691344,
+            "feature_value": 231702.0
+          },
+          {
+            "feature": "current_balance_rollmax_12",
+            "shap_value": 0.14378439548027488,
+            "feature_value": 3952505.5524231717
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.11537486766352607,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_lag2",
+            "shap_value": 0.07829952047774932,
+            "feature_value": 224671.38
+          }
+        ],
+        "actual": 0,
+        "predicted": 1,
+        "probability": 0.6311907049117487
+      }
+    ],
+    "false_negatives": [
+      {
+        "loan_index": 16203,
+        "base_value": -0.7046908443381034,
+        "prediction": -0.9712086215816856,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.5182922651557639,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.40632375994375053,
+            "feature_value": 0.09595433284567545
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": 0.13122723006736137,
+            "feature_value": 0.01656801761323088
+          },
+          {
+            "feature": "months_since_dq",
+            "shap_value": 0.13071190709356115,
+            "feature_value": 21.0
+          },
+          {
+            "feature": "balance_3m_pct_change",
+            "shap_value": -0.10869850491611552,
+            "feature_value": -0.014659942226089002
+          },
+          {
+            "feature": "loan_purpose_Purchase",
+            "shap_value": 0.09352343494872874,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.09319782069809977,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "balance_3m_change",
+            "shap_value": -0.08647179277705892,
+            "feature_value": -4569.369999999995
+          },
+          {
+            "feature": "loan_age_months",
+            "shap_value": 0.084709687504718,
+            "feature_value": 22.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.07839962093161118,
+            "feature_value": 0.0351
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.08178722851949195
+      },
+      {
+        "loan_index": 3017,
+        "base_value": -0.7046908443381034,
+        "prediction": -1.0549591773371008,
+        "contributions": [
+          {
+            "feature": "state_IN",
+            "shap_value": -0.33427033795290423,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance_rollstd_6",
+            "shap_value": -0.3011307265786641,
+            "feature_value": 15362.499553875441
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.19048395177772362,
+            "feature_value": 0.22383609683514738
+          },
+          {
+            "feature": "servicer_name_Servicer_D",
+            "shap_value": -0.1630002834821247,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "credit_score_band_encoded",
+            "shap_value": 0.16085223344922803,
+            "feature_value": 5.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": 0.13126106403548296,
+            "feature_value": 158432.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.12538127691776993,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_rollstd_3",
+            "shap_value": 0.07782274336940721,
+            "feature_value": 21502.01246411719
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.05297815455763399,
+            "feature_value": 0.9892514138557866
+          },
+          {
+            "feature": "balance_ratio_rollstd_6",
+            "shap_value": -0.03858481892071911,
+            "feature_value": 0.09696588791327128
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.07246398091167015
+      },
+      {
+        "loan_index": 16917,
+        "base_value": -0.7046908443381034,
+        "prediction": 0.21916440953355287,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.3471824179942256,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.145483203534923,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "state_IN",
+            "shap_value": -0.14372806061612492,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": -0.09416397814216178,
+            "feature_value": 0.0621
+          },
+          {
+            "feature": "servicer_name_Servicer_C",
+            "shap_value": 0.08534056121378224,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": -0.07196117912634994,
+            "feature_value": 390856.0
+          },
+          {
+            "feature": "loan_purpose_Purchase",
+            "shap_value": 0.061270295913882056,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.05645020908903178,
+            "feature_value": 0.9902206695048816
+          },
+          {
+            "feature": "property_type_Condo",
+            "shap_value": -0.05226549580217476,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "months_since_dq",
+            "shap_value": 0.04425105434992407,
+            "feature_value": 21.0
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.17391428966771436
+      },
+      {
+        "loan_index": 661,
+        "base_value": -0.7046908443381034,
+        "prediction": 0.029337367680096316,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": -0.32903623125706727,
+            "feature_value": 2.0
+          },
+          {
+            "feature": "balance_paid_pct",
+            "shap_value": -0.25304236463964647,
+            "feature_value": 0.07268893594801584
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": -0.1720843175883386,
+            "feature_value": 4.0
+          },
+          {
+            "feature": "months_since_dq",
+            "shap_value": 0.15270100919626936,
+            "feature_value": 17.0
+          },
+          {
+            "feature": "balance_3m_pct_change",
+            "shap_value": 0.15226373893121736,
+            "feature_value": -0.013252818283964539
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": 0.14858360656522862,
+            "feature_value": 0.014694160848740463
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.09511881289998732,
+            "feature_value": 0.0446
+          },
+          {
+            "feature": "current_balance_rollstd_12",
+            "shap_value": 0.08833224662345707,
+            "feature_value": 5065.371127777742
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.08737843435620239,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "current_balance_lag6",
+            "shap_value": 0.08653256091863748,
+            "feature_value": 328201.79
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.18206350425342674
+      },
+      {
+        "loan_index": 2575,
+        "base_value": -0.7046908443381034,
+        "prediction": -0.12192623250041856,
+        "contributions": [
+          {
+            "feature": "data_quality_flag",
+            "shap_value": 0.30318542874554816,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "dti_band_encoded",
+            "shap_value": 0.28788148272072683,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "original_balance",
+            "shap_value": -0.2490696504686796,
+            "feature_value": 497820.0
+          },
+          {
+            "feature": "current_status_encoded",
+            "shap_value": 0.14829513311744336,
+            "feature_value": 0.0
+          },
+          {
+            "feature": "servicer_name_Servicer_B",
+            "shap_value": -0.10767615723989217,
+            "feature_value": 1.0
+          },
+          {
+            "feature": "current_balance",
+            "shap_value": -0.09584769645205167,
+            "feature_value": 485732.43
+          },
+          {
+            "feature": "interest_rate",
+            "shap_value": 0.06929748236787177,
+            "feature_value": 0.0455
+          },
+          {
+            "feature": "balance_ratio_rollmax_12",
+            "shap_value": 0.058016241111251476,
+            "feature_value": 0.9920892089510265
+          },
+          {
+            "feature": "current_balance_rollstd_6",
+            "shap_value": -0.05452828339634447,
+            "feature_value": 1282.4916314643426
+          },
+          {
+            "feature": "balance_ratio_rollstd_12",
+            "shap_value": 0.04850416964253024,
+            "feature_value": 0.0049092579175216864
+          }
+        ],
+        "actual": 1,
+        "predicted": 0,
+        "probability": 0.3965362014124751
+      }
+    ]
+  },
+  "next_state": {
+    "false_positives": [],
+    "false_negatives": []
+  }
+}

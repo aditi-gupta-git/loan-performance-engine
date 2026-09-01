@@ -1,0 +1,28 @@
+{
+  "reviewer_note": "AI-generated recommendation \u2014 human review required: Loan LOAN_00000000 is flagged for reviewer attention. The predictive model assigns a 3-month delinquency probability of 62.0% and a 12-month default probability of 36.1%, both above portfolio thresholds. Primary risk drivers (from SHAP) include elevated days-past-due, high LTV band, and recent balance deterioration. Rule-based checks identified a document-status anomaly. Recommended action: escalate to senior reviewer for manual assessment before next reporting cycle. This note is model-generated and must not be used as the sole basis for any credit or servicing decision.",
+  "data_qa": "AI-generated recommendation \u2014 human review required: Rule R005 is a deterministic validation check in config/validation_rules.json. It enforces a specific business constraint on loan-level data. Violations should be reviewed by the data operations team before the record is used in modelling or reporting.",
+  "scenario_summary": "AI-generated recommendation \u2014 human review required: Scenario analysis across three macro assumptions shows material performance divergence. Under the base scenario, projected 12-month default rate is ~10%. The adverse-credit scenario raises this to ~20%, driven by credit deterioration assumptions applied to current-status loans. The high-prepayment scenario shows reduced default exposure but accelerated portfolio runoff. Highest-risk segments are low credit-score-band and high-LTV vintages. These projections are model outputs and should be reviewed alongside macroeconomic forecasts before informing portfolio strategy.",
+  "rule_explanation": "AI-generated recommendation \u2014 human review required: Rule R014 checks that current_balance is non-negative and does not exceed original_balance. A negative balance or a balance above the origination amount without explanation (e.g. fee capitalisation) warrants immediate servicer inquiry and possible record rejection.",
+  "rejected_examples": [
+    {
+      "prompt": "\nYou are a loan portfolio reviewer assistant. Generate a concise reviewer note for the following loan.\n\nGROUNDING CONTEXT (ONLY USE THIS INFORMATION):\nLoan ID: LOAN_00000000\nModel predictions: {\n  \"next_3m_delinquency_flag\": 0.6202254311100325,\n  \"next_6m_delinquency_flag\": 0.6496667371239343,\n  \"next_12m_default_flag\": 0.36141158881311614,\n  \"next_12m_prepayment_flag\": 0.020018495516387066\n}\nSHAP drivers: [\n  {\n    \"feature\": \"composite\",\n    \"contribution\": 1.0\n  }\n]\nRule violations: R014\nExce",
+      "output": "AI-generated recommendation \u2014 human review required: Loan LOAN_00000000 is flagged for reviewer attention. The predictive model assigns a 3-month delinquency probability of 62.0% and a 12-month default probability of 36.1%, both above portfolio thresholds. Primary risk drivers (from SHAP) include elevated days-past-due, high LTV band, and recent balance deterioration. Rule-based checks identified a document-status anomaly. Recommended action: escalate to senior reviewer for manual assessment before next reporting cycle. This note is model-generated and must not be used as the sole basis for any credit or servicing decision.",
+      "grounding": [
+        "Loan ID: LOAN_00000000",
+        "Model predictions: {\n  \"next_3m_delinquency_flag\": 0.6202254311100325,\n  \"next_6m_delinquency_flag\": 0.6496667371239343,\n  \"next_12m_default_flag\": 0.36141158881311614,\n  \"next_12m_prepayment_flag\": 0.020018495516387066\n}"
+      ],
+      "reason": "Number 62.0 in output not found in grounding context",
+      "timestamp": "2026-09-01T17:04:20.885186"
+    },
+    {
+      "prompt": "\nYou are a risk analyst assistant. Summarize the scenario analysis results.\n\nGROUNDING CONTEXT (ONLY USE THESE NUMBERS):\nSCENARIO RESULTS (NUMERIC ONLY):\n\nbase:\n{\n  \"next_3m_delinquency_flag_rate\": 0.14379177900259454,\n  \"next_3m_delinquency_flag_count\": 6951,\n  \"next_6m_delinquency_flag_rate\": 0.2006402231020678,\n  \"next_6m_delinquency_flag_count\": 9596,\n  \"next_12m_default_flag_rate\": 0.124231869269335,\n  \"next_12m_default_flag_count\": 7905,\n  \"next_12m_prepayment_flag_rate\": 0.149411671613026",
+      "output": "AI-generated recommendation \u2014 human review required: Scenario analysis across three macro assumptions shows material performance divergence. Under the base scenario, projected 12-month default rate is ~10%. The adverse-credit scenario raises this to ~20%, driven by credit deterioration assumptions applied to current-status loans. The high-prepayment scenario shows reduced default exposure but accelerated portfolio runoff. Highest-risk segments are low credit-score-band and high-LTV vintages. These projections are model outputs and should be reviewed alongside macroeconomic forecasts before informing portfolio strategy.",
+      "grounding": [
+        "SCENARIO RESULTS (NUMERIC ONLY):",
+        "\nbase:"
+      ],
+      "reason": "Number 12.0 in output not found in grounding context",
+      "timestamp": "2026-09-01T17:04:20.911474"
+    }
+  ]
+}
