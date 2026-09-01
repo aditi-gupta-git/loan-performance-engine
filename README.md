@@ -34,9 +34,7 @@
 12. [Task 8 — Agentic Development Evidence](#12-task-8--agentic-development-evidence)
 13. [Data](#13-data)
 14. [Submission File](#14-submission-file)
-15. [Running on GitHub Codespaces](#15-running-on-github-codespaces)
-16. [Reproducing Results](#16-reproducing-results)
-17. [Deliverables Checklist](#17-deliverables-checklist)
+15. [Deliverables Checklist](#17-deliverables-checklist)
 
 ---
 
@@ -537,7 +535,7 @@ Pre-trained `.pkl` files and pre-generated reports are committed to the reposito
 
 ---
 
-## 17. Deliverables Checklist
+## 15. Deliverables Checklist
 
 | Deliverable | Location | Status |
 |---|---|---|
